@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menubar</title>
+    <style>
+
+        *{
+            margin:0px;
+            padding:0px;
+        }
+        ul,li{
+            list-style:none;
+        }
+        ul#mainmeun_list{
+            width:1000px;
+            height:40px;
+            background:red;
+            margin:50px auto;
+        }
+        ul#mainmenu_list li{
+        width:200px;
+        height:40px;
+        float:left;
+        background:black;
+        color:white;
+        text-align:center;
+        line-height:40px;
+        border-left:solid 1px white;
+        box-sizing:border-box;
+        }
+        body{
+            background : #ccc
+        }
+        ul#mainmeun_list li:last-child{
+            border-left:none;
+        }
+ 
+        #mainmenu_list li:hover{
+            background:coral;
+        }
+    
+        /*hover은 마우스 갖다댔을때 색깔이 바뀜*/
+    </style>
+</head>
+<body>
+    <ul id="mainmenu_list">
+        <li>핸드폰</li>
+        <li>가전</li>
+        <li>가구</li>
+        <li>키친</li>
+        <li>패션잡화</li>
+    </ul>
+</body>
+</html>
