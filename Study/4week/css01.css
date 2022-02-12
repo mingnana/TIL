@@ -1,0 +1,69 @@
+ *{margin:0;padding:0;}
+      li{list-style:none;}
+
+      #wrap{min-width:1025px;width:100%;}
+      h2{text-align:center;line-height:100px;}
+
+
+      /* ################### section_cont0  ################ */
+      #section_cont0{width:100%;height:600px;}
+      .ts1{width:800px;height:400px;background:#eee;margin:0 auto;}
+      .ts1 li{width:200px;height:100%;float:left;line-height:380px;text-align:center;}
+      .ts1 .ts1_li0{background:#0f0;}
+      .ts1 .ts1_li1{background:pink;}
+      /* 4개자리 ul li */
+      .ts1 .ts1_li2{width:400px;}
+      .ts1 .ts1_li2 ul{width:400px;height:100%;}
+      .ts1 .ts1_li2 li{width:200px;height:190px;line-height:190px;}
+      .ts1 .ts1_li2 .aqua{width:190px;background:aqua;border:5px solid #f00;}
+      .ts1 .ts1_li2 .red{width:190px;background:#d13;border:5px solid #00f;}
+
+
+      /* #################### section_cont1  ############# */
+      #section_cont1{width:100%;height:450px;}
+      .ts2{width:1410px;height:301px;margin:0 auto;}
+      /* li 공통 작업 */
+      .ts2 li{width:234px;margin-right:1px;height:100%;line-height:300px;text-align:center;float:left;background:#ccc;}
+      .ts2 .li0{width:704px;height:301px;background:#fff;}
+      .ts2 .li0 ul{float:left;}
+      .ts2 .li0 li{height:150px;line-height:150px;}
+      .ts2 .margin{margin-bottom:1px;}
+      /* gold 색 ul li */
+      .ts2 .ul0{width:528px;height:100%;float:left;}
+      .ts2 .ul0 li{width:175px;background:gold}
+      /* 노란색 ul li */
+      .ts2 .ul1{width:175px;}
+      .ts2 .ul1 li{width:86px;background:#ff0;}
+      
+
+      /* #################### section_cont2  ############# */
+      #section_cont2{width:100%;height:500px;}
+      .ts3{width:1311px;height:300px;margin:0 auto;background:Red;}
+      .ts3 li{width:200px;margin-right:1px;height:100%;line-height:300px;text-align:center;float:left;background:#ff0;}
+      /* 첫번째 ul li */
+      .ts3 .li0 ul{width:202px;height:100%;background:red;}
+      .ts3 .li0 li{width:100px;background:#ccc;float:left;}
+      .ts3 .li0 .li0_1{width:100px;background-color:#333;color:#fff;}
+
+      /* 세번째 ul li */   
+      .ts3 .li1{width:707px;height:100%;background:#fff;color:#fff;}
+      /* 세번째 ul li - 첫번째 */
+      .ts3 .ul0{width:202px;height:100%;float:left;}
+      .ts3 .ul0 li{width:100px;height:150px;line-height:150px;}
+      .ts3 .ul0_li0{background-color:#00f;}
+      .ts3 .ul0_li1{background-color:#00e;}
+      .ts3 .ul0 .ul0_li2{width:201px;background-color:#00c;}
+
+      /* 세번째 ul li - 두번째 */
+      .ts3 .ul1{width:202px;height:100%;float:left;}
+      .ts3 .ul1 li{width:100px;}
+      .ts3 .ul1_li0{background-color:#00a;}
+      .ts3 .ul1_li1{background-color:#009;}
+
+      /* 세번째 ul li - 세번째 */
+      .ts3 .ul2{width:303px;height:100%;float:left;}
+      .ts3 .ul2 li{width:100px;height:150px;line-height:150px;}
+      .ts3 .ul2_li0{background-color:#007;}
+      .ts3 .ul2_li1{background-color:#005;}
+      .ts3 .ul2_li2{background-color:#00f;}
+      .ts3 .ul2 .ul2_li3{width:302px;background-color:#000;}
