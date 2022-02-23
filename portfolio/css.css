@@ -1,0 +1,127 @@
+*{margin:0; padding:0;}
+      li{list-style:none;}
+
+      #wrap{min-width:1025px; width:100%;}
+
+      /* ################################# conatiner 공통작업 ################################# */
+      #container{width:100%;}
+      #container h2{width:100%; padding:30px;
+         font-size:40px;
+         text-align:center;
+         /* background: pink; */}
+      .moreBox{width:100%; height:50px;
+         padding:20px 0 50px;
+         text-align:center;
+         margin:0 auto;}
+      .moreBox p{ width:150px; line-height:50px;font-weight:700;}
+
+      /* ################################# visual ################################# */
+
+      #visual {width:100%; height:1000px;text-align:center; overflow:hidden; /* background-color: gold; */}
+      #visual p{width:472px; height:960px; line-height:960px; margin-left:300px;}
+      #visual p img{width:100%;}
+
+      /* #################################  section0  ################################# */
+
+      #txt {width:100%; /* background-color:antiquewhite; */}
+      #txt .txt_inner {width:100%; overflow:hidden; /* background: sandybrown; */}
+      #txt h2 {line-height:90px; font-size:100px; padding:280px 0 50px; background:Red; font-family:batang;}
+      #txt .text {font-size:23px; text-align:center;}
+      #txt .txt_inner ul{width:1200px; height:420px; background:pink; margin:0 auto;}
+      #txt .txt_inner li {width:600px; text-align:center; float:left;}
+      #txt .txt_inner li .label{padding:70px 30px 10px; font-size:40px; /* background: gold; */}
+      #txt .txt_inner li .number{font-size:70px; /* background: blue; */}
+
+      /* #################################  section1  ################################# */
+      #section1{width:100%; height:4000px; overflow:hidden;
+         background-image:url("img/bg.jpg");
+         background-size:100%;
+         background-repeat:no-repeat;
+         background-attachment:fixed;}
+
+      /* 글씨영역 */
+      #section1 .desc{width:100%; padding-left:250px; font-weight:700;}
+      #section1 .title{width:100%; padding-top:450px; font-size:80px; color:#000;}
+      #section1 .text{width:980px; padding-top:100px; font-size:25px}
+
+      /* 사진영역 */
+      #section1 img{width:100%;}
+      #section1 .first{width:400px; margin:400px 0 0 700px;}
+      #section1 .second{width:500px; margin:150px 0 0 1200px;}
+      #section1 .third{width:500px; margin: 150px 0 0 600px;}
+      #section1 .fourth{width:500px; margin: 150px 0 0 1200px;
+      }
+      /* #################################  Featured  ################################# */
+      #featured {width:100%; /* background: gold; */}
+      #featured .featured_inner{width:1060px; height:720px; overflow:hidden; margin:0 auto; /* background: plum; */}
+      #featured .featured_inner li{width:300px; height:300px; margin:40px 0 0 40px; float:left;}
+      #featured .featured_inner img{width:100%;}
+
+      /* more Games */
+      #featured .moreBox p{margin: 0 auto; border:1px solid #000; background-color:#fff; color:#000;}
+
+      /* ################################# Event ################################# */
+      /* #Event { width: 100%; background: #ff0;}
+      #Event .Event_inner {width: 980px; height: 880px; padding-bottom:40px; background: #aa0; margin: 0 auto;}
+
+      #Event .Event_inner li { width: 300px; height: 400px; line-height: 400px;
+         text-align: center;
+         margin-top: 40px;
+         float: left;
+         background: gold;}
+      #Event .Event_inner img{width:100%;}
+      #Event .Event_inner .li1{margin-left:40px; margin-right:40px;}
+      #Event .Event_inner .li4{margin-left:40px; margin-right:40px;} */
+
+      /* ################################# Recommended ################################# */
+      #recommended{width:100%; /* background: green; */}
+
+      .reco_inner{width:1060px; overflow:hidden; margin:0 auto;}
+      .reco_inner ul{width:100%; height:464px; overflow:hidden; padding:100px 0 40px; background:greenyellow;}
+      .reco_inner li{float:left;}
+
+      /* 왼쪽 ul li */
+      .reco_inner .left{width:640px; background-color:#fff; padding:50px 0;}
+      .reco_inner .left img{width:100%;}
+
+      /* 오른쪽 ul li */
+      .reco_inner .right{width:420px; height:464px; background-color:rgb(61, 58, 58); /* padding:0 20px 0 10px; */ color:#fff;}
+      .reco_inner .right h3{line-height:100px; font-size:30px; text-align:center;}
+      .reco_inner .right .imgs{width:410px; height:236px; overflow:hidden; padding:10px 0 10px 10px; background-color:rgb(105, 212, 110);}
+      .reco_inner .imgs li{ width:185px; overflow:hidden; margin:10px 0 0 10px;}
+      .reco_inner .imgs img{width: 100%;}
+      .reco_inner .right .desc{width: 100%; line-height: 50px; font-size: 20px; text-indent: 20px;}
+      .reco_inner .right .price{width: 390px; line-height: 50px; font-size: 20px; text-align: right; padding-right: 30px;}
+
+      #recommended .auto{width: 100%; height: 200px;
+         line-height: 40px;
+         padding-bottom: 50px;
+         text-align: center;
+         background-color: blueviolet}
+
+      /* ################################# News ################################# */
+      #news{width: 100%; background: powderblue;}
+
+      .news_inner{width: 1920px; overflow: hidden; margin: 0 auto;}
+      .news_inner ul{width: 1920px; height: 600px; padding-top: 200px; background: skyblue;}
+      .news_inner li{width: 260px; padding: 120px 20px;
+         margin-right: 30px;
+         background-color: beige;
+         text-align: center;
+         float: left;}
+      .news_inner h3{font-size: 30px; height: 120px;}
+      .news_inner .no3{width: 300px; height: 275px; margin-top: -30px; padding: 130px 30px;}
+      .news_inner .no3 h3{font-size: 35px;}
+      .news_inner .no3 .text{padding-top: 20px; font-size: 20px;}
+      .news_inner .no0{width: 140px; height: 225px;}
+      /*no0, no3 상자들은 디자인때문에 임의로 잡은것, 추후 변경 예정*/
+
+      /* ################################# Steam ################################# */
+      #Steam{width: 100%; height: 450px;
+         background-image: url("img/s3.jpg");
+         background-repeat: no-repeat;
+         background-position: center center;}
+      #Steam div{width: 980px; margin: 0 auto;}
+      #Steam h3 {padding-top: 150px; color: #f00; font-size: 50px;}
+      #Steam .desc {color: #fff; font-size: 20px; padding: 20px 0;}
+      #Steam .moreBox p {color: #fff; border: 1px solid #fff;}
