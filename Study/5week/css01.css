@@ -1,0 +1,34 @@
+ 	  *{margin:0; padding:0;}
+      li{list-style-type:none;}
+      a:link, a:visited{text-decoration:none; color:#000;}
+      body{background-color:#eee;}
+      
+      #wrap{min-width:1025px; width:100%;}
+      #container{width:100%;}
+      #content{width:910px; height:100%; margin:50px auto 0;}
+      
+      /* 큰제목 공통작업 */
+      h2{font-size:20px; text-indent:20px;}
+      .color{color:#00CD3C;}
+      i{font-style:normal;}
+
+      /* 메뉴바 */
+      #title{width:100%;}
+      #title ul{width:920px; height:20px; margin:10px 0;}
+      #title li{width:90px; height:100%; line-height:20px; float:left; border:1px solid #bbb; border-left:none; border-top:3px solid #bbb; text-align:center}
+      #title li:hover{background-color:#00CD3C; color:#fff;}
+      #title li a{width:100%; height:100%; font-size:12px; display:block;}
+      #title a:hover, #title a:focus{background-color:#00CD3C; color:#fff;}
+      #title .remove{border-right:none;}
+      
+      /* 최신앨범 */
+      #album{width:100%; overflow:hidden;}
+      #album h2{font-size:17px;}
+      #album ul{width:1000px; height:241px; padding-top:10px; }
+      #album li{width:156px; margin-right:10px; float:left;}
+      #album li:hover{background-color:#00CD3C; color:#fff;}
+      #album img{width:100%;}
+
+      /* 앨범정보 */
+      #album div strong{width:100%; overflow:hidden; padding:5px 0; font-size:14px; white-space:nowrap; text-overflow:ellipsis; display:block;}
+      #album div span{font-size:13px; display:block;}
