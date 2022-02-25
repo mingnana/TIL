@@ -1,0 +1,45 @@
+ *{margin:0; padding:0;}
+      li{list-style-type:none;}
+      a:link, a:visited{text-decoration:none; color:#00f;}
+      body{font-family:"굴림";}
+
+      #wrap{min-width:1025px; width:100%}
+      #container{width:100%;}
+      #coffeeArea{width:100%;}
+
+      /* 공통 언더라인 */
+     a:hover,a:focus{text-decoration:underline; color:#00f;}
+
+      #coffee{width:825px; overflow:hidden; margin:50px auto;}
+      #coffee h2{line-height:70px;font-size: 30px; color:#a00; text-align:center; }
+      /* ##################### 왼쪽 ######################## */
+      /* 사진 */
+      #coffee .imgArea_left{width:300px; height:280px; border:1px solid #ccc; float:left;  }
+      #coffee .imgArea_left .img{width:100%;}
+      #coffee .imgArea_left .img img{width:100%;}
+      /* 글 */
+      #coffee .imgArea_left .desc{width:100%;}
+      #coffee .imgArea_left .desc span{width:100%; display:block;}
+      #coffee .imgArea_left .desc a{width:100%; padding:15px 0; text-align:center; color:#777; display:block; }
+
+      /* ##################### 오른쪽 ######################## */
+      #coffee .text{width:482px; height:282px; padding-left:40px; float:left;}
+      /* 상단 설명 */
+      #coffee .desc{width:100%; height:90px; border-bottom:1px solid #aaa;}
+      #coffee .desc .title{width:100%; padding:10px 0; font-size:22px; font-weight:700;}
+      #coffee .desc .title span{display:block;}
+      #coffee .desc .title a{width:100%; height:100%; display:block;}
+
+      /* 중간 정보 */
+      #coffee .info{width:100%; height:70px;}
+      #coffee .info span{margin-right:5px}
+      #coffee .mammoth{width:100%;padding-top:10px;line-height:30px;}
+
+      /* 마지막 사진 */
+      #coffee .imgArea{width:100%; overflow:hidden;}
+      #coffee .imgArea p{width:128px; float:left; margin-right:20px; border:1px solid #ccc;}
+      #coffee .imgArea .title{width:100%; height:30px; line-height:30px; display:block; text-align:center;}
+      #coffee .imgArea a{width:100%; height:118px; display:block;}
+      #coffee .imgArea a .img{width:128px; height:85px; background:Red; display:block;}
+      #coffee .imgArea a .img img{width:100%; height:100%}
+      #coffee .imgArea .title{width:100%;}
