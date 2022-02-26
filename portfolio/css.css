@@ -1,4 +1,4 @@
- *{margin:0; padding:0;}
+  *{margin:0; padding:0;}
       li{list-style:none;}
 
       #wrap{min-width:1025px; width:100%;}
@@ -10,18 +10,15 @@
          text-align:center;
          /* background: pink; */}
       .moreBox{width:100%; height:50px;
-         padding:20px 0 50px;
-         text-align:center;
-         margin:0 auto;}
-      .moreBox button{ width:150px; line-height:50px;font-weight:700;}
+         padding:20px 0 50px;}
+      .moreBox button{width:150px; line-height:50px;font-weight:700;}
 
       /* ################################# visual ################################# */
-
       #visual {width:100%; height:1000px;text-align:center; overflow:hidden; /* background-color: gold; */}
       #visual p{width:472px; height:960px; line-height:960px; margin-left:300px;}
       #visual p img{width:100%;}
 
-      /* #################################  section0  ################################# */
+      /* #################################  txt  ################################# */
 
       #txt {width:100%; /* background-color:antiquewhite; */}
       #txt .txt_inner {width:100%; overflow:hidden; /* background: sandybrown; */}
@@ -58,8 +55,12 @@
       #featured .featured_inner ul{width:100%; height:100%;}
       #featured .featured_inner li{width:300px; height:300px; margin:40px 0 0 40px; float:left;}
       #featured .featured_inner img{width:100%;}
+      #featured .moreBox{width:100%; height:50px;
+         padding:20px 0 50px;
+         text-align:center;
+         margin:0 auto;}
 
-      /* more Games */
+
 
       /* ################################# Event ################################# */
       /* #Event { width: 100%; background: #ff0;}
@@ -75,31 +76,103 @@
       #Event .Event_inner .li4{margin-left:40px; margin-right:40px;} */
 
       /* ################################# Recommended ################################# */
-      #recommended{width:100%; overflow:hidden;  /* background: green; */}
+      #recommended{width:100%; /* background: green; */}
+      #reco_inn{width:1060px; height:1000px; overflow:hidden; margin:0 auto; background:#ccc;}
+      /* 왼쪽 */
+      #reco_inn .left{width:640px; height:360px; padding:80px 0; background-color:#fff; float:left;}
+      #reco_inn .left p{width:100%;height:100%;}
+      #reco_inn .left a{width:100%; height:100%; display:block;}
+      #reco_inn .left img{width:100%;}
 
-      .reco_inner{width:1920px; height:720px; overflow:hidden; margin:0 auto;}
-      .reco_inner ul{width:100%; height:100%; overflow:hidden; padding:100px 0 40px; background:greenyellow;}
-      .reco_inner li{float:left;}
+      /* 오른쪽 */
+      #reco_inn .right{width:420px;height:520px; background-color:#cbc; color:#fff; /*padding:0 20px 0 10px;*/ float:left;}
+      #reco_inn .right h3{line-height:100px; font-size:30px; text-align:center;}
+
+      #reco_inn .imgs{width:100%; overflow:hidden; background:red;}
+      #reco_inn .imgs ul{width:100%; background:blue}
+      #reco_inn .imgs li{width:150px; height:236px; margin:10px 0 0 10px; float:left;}
+      #reco_inn .imgs img{width:100%;}
+      #reco_inn .imgs
+     
+      #reco_inn .text{width:100%; background:red; clear:both;}
+      #reco_inn
+      #reco_inn
+      /* #reco_inn ul{width:100%; height:464px; overflow:hidden; padding:100px 0 40px; margin:0 auto;}
+      #reco_inn li{float:left;} */
 
       /* 왼쪽 ul li */
-      .reco_inner .left{width:640px; background-color:#fff; padding:50px 0;}
-      .reco_inner .left img{width:100%;}
+      /* #reco_inn .left{width:640px; height:364px; background-color:#fff; padding:50px 0;}
+      #reco_inn .left a{width:100%; height:100%; display:block;}
+      #reco_inn .left img{width:100%;} */
 
       /* 오른쪽 ul li */
-      .reco_inner .right{width:420px; height:464px; background-color:rgb(61, 58, 58); /* padding:0 20px 0 10px; */ color:#fff;}
-      .reco_inner .right h3{line-height:100px; font-size:30px; text-align:center;}
-      .reco_inner .right .imgs{width:410px; height:236px; overflow:hidden; padding:10px 0 10px 10px; background-color:rgb(105, 212, 110);}
-      .reco_inner .imgs li{ width:185px; overflow:hidden; margin:10px 0 0 10px;}
-      .reco_inner .imgs img{width: 100%;}
-      .reco_inner .right .desc{width: 100%; line-height: 50px; font-size: 20px; text-indent: 20px;}
-      .reco_inner .right .price{width: 390px; line-height: 50px; font-size: 20px; text-align: right; padding-right: 30px;}
+      /* #reco_inn .right{width:420px; height:464px; background-color:#cbc; padding:0 20px 0 10px; color:#fff;}
+      #reco_inn .right h3{line-height:100px; font-size:30px; text-align:center;}
+      #reco_inn .imgs{width:410px; height:236px; overflow:hidden; padding:10px 0 10px 10px;background-color:#f00;}
+      #reco_inn ul{width:100%; height:100%;}
+      #reco_inn .imgs li{width:185px; overflow:hidden; margin:10px 0 0 10px;}
+      #reco_inn .imgs img{width: 100%;}
 
-      /* 스와이프 */
-      #recommended .swiper{width: 100%;
-         line-height: 40px;
-         padding-bottom: 50px;
-         text-align: center;
-         background-color: blueviolet}
+
+      #reco_inn .right .desc{width: 100%; line-height: 50px; font-size: 20px; text-indent: 20px;}
+      #reco_inn .right .price{width: 390px; line-height: 50px; font-size: 20px; text-align: right; padding-right: 30px;} */
+      
+      /* <div id="recommended">
+            <h2>Recommended</h2>
+            <div id="reco_inn">
+               <div class="left">
+                  <p>
+                     <a href="#" title="#">
+                        <img src="img/rec1.webp" alt="#" />
+                     </a>
+                  </p>
+               </div>
+               <div class="right">
+                  <h3>H-Isekai Loves</h3>
+                  <div class="imgs">
+                     <ul>
+                        <li class="right">
+                           <a href="#" title="#">
+                              <img src="img/rec1_1.jpg" alt="" />
+                           </a>
+                        </li>
+                        <li>
+                           <a href="#" title="#">
+                              <img src="img/rec1_2.jpg" alt="" />
+                           </a>
+                        </li>
+                        <li>
+                           <a href="#" title="#">
+                              <img src="img/rec1_3.jpg" alt="" />
+                           </a>
+                        </li>
+                        <li>
+                           <a href="#" title="#">
+                              <img src="img/rec1_4.jpg" alt="" />
+                           </a>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="text">
+                     <p class="desc">Early Access Now Available</p>
+                     <p class="price">￦22,000</p>
+                  </div>
+               </div>
+            </div> */
+
+      /* 스와이프 버튼 */
+      #swiper{width:100%; height:25px; padding:20px 0 150px; text-align:center; }
+      #swiper ul{width:225px; height:100%; margin:0 auto; }
+      #swiper li{width:25px; height:25px; margin-right:20px;  border-radius:50%; 
+                  background-color:rgba(204, 204, 204, 0.5); float:left; }
+      #swiper li a{width:100%; height:100%; float:left;}
+      #swiper li:hover, #swiper li a:focus{background-color:#777;}
+
+
+         
+
+
+
 
       /* ################################# News ################################# */
       #news{width: 100%; background: powderblue;}
