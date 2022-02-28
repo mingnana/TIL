@@ -1,0 +1,28 @@
+      *{margin:0; padding:0;}
+      li{list-style-type:none;}
+      a:link, a:visited{text-decoration:none;color:#000;}
+
+      #wrap{min-width:1025px; width:100%;}
+      #container{width:100%;}
+      #content{width:300px; margin:50px auto; border:1px solid #aaa; font-size:14px;}
+      /* ##############  title  ############## */
+      #title{width:100%; height:30px; line-height:40px; text-indent:10px; }
+      #title p{width:100%; height:100%; }
+      #title a{width:100%; height:100%; }
+      #title strong{width:250px; font-weight:400; color:#00f}
+      #title span{width:50px; margin-left:40px;}
+      #title a:hover strong, #title a:focus strong{text-decoration:underline;}
+
+      /* ##############  product  ############## */
+      #product{width:100%; height:368px; overflow:hidden;}
+      #product ul{width:300px; height:100%; }
+      #product li{width:100%; height:72px; padding-top:20px; float:left;}
+      #product li p{width:130px; height:100%; float:left;}
+      #product li a{width:100%; height:100%; float:left;}
+      #product li a img{width:100%;}
+      /* Ό³Έν */
+      #product .text{width:150px; height:100%; padding-left:20px;float:left; }
+      #product .text p{width:100%; height:22px}
+      #product .text a{width:100%; height:100%; overflow:hidden; white-space:nowrap; text-overflow:ellipsis;}
+      #product li .price{width:100%;}
+      #product li .shop{color:#aaa;}
