@@ -1,27 +1,28 @@
   *{margin:0; padding:0;}
       li{list-style:none;}
+      a:link, a:visited{text-decoration:none; color:#000;}
 
+      body{font-family:"Roboto"}
       #wrap{min-width:1025px; width:100%;}
 
       /* ################################# conatiner 공통작업 ################################# */
       #container{width:100%;}
-      #container h2{width:100%; padding:30px;
+      #container h2{width:100%; padding:50px 0 0;
          font-size:40px;
-         text-align:center;
-         /* background: pink; */}
+         text-align:center;}
       .moreBox{width:100%; height:50px;
          padding:20px 0 50px;}
-      .moreBox button{width:150px; line-height:50px;font-weight:700;}
+      .moreBox a{width:150px; line-height:50px; font-weight:700; border:2px solid #aaa; display:block; text-align:center;}
 
       /* ################################# visual ################################# */
-      #visual {width:100%; height:1000px;text-align:center; overflow:hidden; /* background-color: gold; */}
+      #visual {width:100%; height:1000px; text-align:center; overflow:hidden; /* background-color: gold; */}
       #visual p{width:472px; height:960px; line-height:960px; margin-left:300px;}
       #visual p img{width:100%;}
 
       /* #################################  txt  ################################# */
 
-      #txt {width:100%; /* background-color:antiquewhite; */}
-      #txt .txt_inner {width:100%; overflow:hidden; /* background: sandybrown; */}
+      #txt {width:100%; height:954px; background-color:#f7f7f7;}
+      #txt .txt_inner {width:100%;}
       #txt h2 {line-height:90px; font-size:80px; padding:280px 0 50px; font-family:batang;}
       #txt .text {font-size:18px; text-align:center;}
       #txt .txt_inner ul{width:1200px; height:420px;  margin:0 auto;}
@@ -29,167 +30,106 @@
       #txt .txt_inner li .label{padding:70px 30px 10px; font-size:30px; /* background: gold; */}
       #txt .txt_inner li .number{font-size:60px; /* background: blue; */}
 
-      /* #################################  bck  ################################# */
-      #bck{width:100%; height:4000px; overflow:hidden;
-         background-image:url("img/bg.jpg");
-         background-size:100%;
-         background-repeat:no-repeat;
-         background-attachment:fixed;
-         font-family:batang;}
-
-      /* 글씨영역 */
-      #bck .desc{width:100%; padding-left:250px; font-weight:700;}
-      #bck .title{width:100%; padding-top:450px; font-size:80px; color:#000;}
-      #bck .text{width:980px; padding-top:100px; font-size:25px}
-
-      /* 사진영역 */
-      #bck img{width:100%;}
-      #bck .first{width:400px; margin:400px 0 0 700px;}
-      #bck .second{width:500px; margin:150px 0 0 1200px;}
-      #bck .third{width:500px; margin: 150px 0 0 600px;}
-      #bck .fourth{width:500px; margin: 150px 0 0 1200px;
-      }
       /* #################################  Featured  ################################# */
-      #featured {width:100%; /* background: gold; */}
-      #featured .featured_inner{width:1060px; height:720px; overflow:hidden; margin:0 auto; /* background: plum; */}
+      #featured {width:100%; height:954px; background-color:#201e1f; color:#fff;}
+      #featured .featured_inner{width:1030px; height:690px; overflow:hidden; margin:0 auto;}
       #featured .featured_inner ul{width:100%; height:100%;}
-      #featured .featured_inner li{width:300px; height:300px; margin:40px 0 0 40px; float:left;}
+      #featured .featured_inner li{width:290px; height:290px; margin:40px 0 0 40px;  float:left;}
+      #featured .featured_inner a{width:100%; display:block;}
+      #featured .featured_inner span{width:100%; display:block;}
       #featured .featured_inner img{width:100%;}
-      #featured .moreBox{width:100%; height:50px;
-         padding:20px 0 50px;
-         text-align:center;
-         margin:0 auto;}
+      #featured .moreBox a{text-align:center; margin:0 auto; color:#fff;}
 
+      /* #################################  sale  ################################# */
+      #sale{width:100%; height:954px; background-color:#f7f7f7;}
+      #sale h2{margin-bottom:40px;}
+      /* 윗부분 */
+      #sale .sale_inn_small{width:1165px; height:250px; margin:0 auto 50px;}
+      #sale .sale_inn_small ul{width:100%; height:100%;}
+      #sale .sale_inn_small li{width:213px; height:100%; margin-left:20px; float:left;}
+      #sale .sale_inn_small a{width:100%; height:100%; display:block;}
+      #sale .sale_inn_small img{width:100%; height:100%;}
+      /* 아랫부분 */
+      #sale .sale_inn_big{width:1165px; overflow:hidden; margin:0 auto;}
+      #sale .sale_inn_big p{width:542px; height:480px; margin-left:40px; text-align:center; float:left;}
+      #sale .sale_inn_big a{width:100%; display:block;}
+      #sale .sale_inn_big img{width:100%;}
 
-
-      /* ################################# Event ################################# */
-      /* #Event { width: 100%; background: #ff0;}
-      #Event .Event_inner {width: 980px; height: 880px; padding-bottom:40px; background: #aa0; margin: 0 auto;}
-
-      #Event .Event_inner li { width: 300px; height: 400px; line-height: 400px;
-         text-align: center;
-         margin-top: 40px;
-         float: left;
-         background: gold;}
-      #Event .Event_inner img{width:100%;}
-      #Event .Event_inner .li1{margin-left:40px; margin-right:40px;}
-      #Event .Event_inner .li4{margin-left:40px; margin-right:40px;} */
-
-      /* ################################# Recommended ################################# */
-      #recommended{width:100%; /* background: green; */}
-      #reco_inn{width:1060px; height:1000px; overflow:hidden; margin:0 auto; background:#ccc;}
+      /* ################################# Free ################################# */
+      #free{width:100%; height:585px; overflow:hidden; background-color:#201e1f;}
+      #free_inn{width:1590px; height:100%; margin:50px auto 0;}
       /* 왼쪽 */
-      #reco_inn .left{width:640px; height:360px; padding:80px 0; background-color:#fff; float:left;}
-      #reco_inn .left p{width:100%;height:100%;}
-      #reco_inn .left a{width:100%; height:100%; display:block;}
-      #reco_inn .left img{width:100%;}
+      #left{width:760px; overflow:hidden; float:left;}
+      #left h3{color:#fff; height:100px; font-size:50px; text-indent:30px; }
+      #left .imgArea{width:100%; height:406px;}
+      #left .imgs{width:350px; height:337px; margin-left:30px; float:left;}
+      #left .imgs a{width:100%; height:100%; display:block;}
+      #left .imgs .img{width:100%; height:100%; display:block; }
+      #left .imgs img{width:100%; height:100%; }
+      /* 이미지 텍스트 */
+      #left .text{width:350px; text-align:center; font-size:25px; font-weight:700; color:#fff; display:block;}
+      
+      /* 오른쪽 */
+      #box{width:800px; height:506px; margin-left:30px; float:left;}
+      #box p{width:100%; height:100%;}
+      #box img{width:100%; height:100%;}
+
+      /* ################################# Free_small ################################# */
+      #free_small{width:100%; height:300px; padding-top:50px; background-color:#201e9a;}
+      #free_small div{width:1398px; height:250px; margin:0 auto;}
+      #free_small ul{width:100%; height:100%;}
+      #free_small li{width:213px; height:100%; margin-left:20px; float:left;}
+      #free_small a{width:100%; height:100%; display:block;}
+      #free_small img{width:100%; height:100%;}
+
+      /* ################################# free_big ################################# */
+      #free_big{width:100%; height:954px;}
+      #free_big{width:1260px; height:548px; margin:40px auto 0; border:3px solid #201e9a; }
+      /* 왼쪽 */
+      #free_big .left{width:740px; height:338px; padding:80px 0; background-color:#fff; float:left;}
+      #free_big .left p{width:100%;height:100%;}
+      #free_big .left a{width:100%; height:100%; display:block;}
+      #free_big .left img{width:100%;}
 
       /* 오른쪽 */
-      #reco_inn .right{width:420px;height:520px; background-color:#cbc; color:#fff; /*padding:0 20px 0 10px;*/ float:left;}
-      #reco_inn .right h3{line-height:100px; font-size:30px; text-align:center;}
-
-      #reco_inn .imgs{width:100%; overflow:hidden; background:red;}
-      #reco_inn .imgs ul{width:100%; background:blue}
-      #reco_inn .imgs li{width:150px; height:236px; margin:10px 0 0 10px; float:left;}
-      #reco_inn .imgs img{width:100%;}
-      #reco_inn .imgs
-     
-      #reco_inn .text{width:100%; background:red; clear:both;}
-      #reco_inn
-      #reco_inn
-      /* #reco_inn ul{width:100%; height:464px; overflow:hidden; padding:100px 0 40px; margin:0 auto;}
-      #reco_inn li{float:left;} */
-
-      /* 왼쪽 ul li */
-      /* #reco_inn .left{width:640px; height:364px; background-color:#fff; padding:50px 0;}
-      #reco_inn .left a{width:100%; height:100%; display:block;}
-      #reco_inn .left img{width:100%;} */
-
-      /* 오른쪽 ul li */
-      /* #reco_inn .right{width:420px; height:464px; background-color:#cbc; padding:0 20px 0 10px; color:#fff;}
-      #reco_inn .right h3{line-height:100px; font-size:30px; text-align:center;}
-      #reco_inn .imgs{width:410px; height:236px; overflow:hidden; padding:10px 0 10px 10px;background-color:#f00;}
-      #reco_inn ul{width:100%; height:100%;}
-      #reco_inn .imgs li{width:185px; overflow:hidden; margin:10px 0 0 10px;}
-      #reco_inn .imgs img{width: 100%;}
-
-
-      #reco_inn .right .desc{width: 100%; line-height: 50px; font-size: 20px; text-indent: 20px;}
-      #reco_inn .right .price{width: 390px; line-height: 50px; font-size: 20px; text-align: right; padding-right: 30px;} */
+      #free_big .right{width:520px; height:100%; background-color:#201e9a; color:#fff; float:left;}
+      #free_big .right h3{line-height:120px; font-size:30px; text-align:center;}
+         /* 이미지 */
+      #free_big .imgs{width:100%; height:310px; background-color:#f7f7f7;}
+      #free_big .imgs ul{width:100%; height:100%; }
+      #free_big .imgs li{width:230px; margin:15px 0 0 20px; float:left;}
+      #free_big .imgs a{width:100%; height:100%; display:block;}
+      #free_big .imgs img{width:100%;}
       
-      /* <div id="recommended">
-            <h2>Recommended</h2>
-            <div id="reco_inn">
-               <div class="left">
-                  <p>
-                     <a href="#" title="#">
-                        <img src="img/rec1.webp" alt="#" />
-                     </a>
-                  </p>
-               </div>
-               <div class="right">
-                  <h3>H-Isekai Loves</h3>
-                  <div class="imgs">
-                     <ul>
-                        <li class="right">
-                           <a href="#" title="#">
-                              <img src="img/rec1_1.jpg" alt="" />
-                           </a>
-                        </li>
-                        <li>
-                           <a href="#" title="#">
-                              <img src="img/rec1_2.jpg" alt="" />
-                           </a>
-                        </li>
-                        <li>
-                           <a href="#" title="#">
-                              <img src="img/rec1_3.jpg" alt="" />
-                           </a>
-                        </li>
-                        <li>
-                           <a href="#" title="#">
-                              <img src="img/rec1_4.jpg" alt="" />
-                           </a>
-                        </li>
-                     </ul>
-                  </div>
-                  <div class="text">
-                     <p class="desc">Early Access Now Available</p>
-                     <p class="price">￦22,000</p>
-                  </div>
-               </div>
-            </div> */
-
-      /* 스와이프 버튼 */
-      #swiper{width:100%; height:25px; padding:20px 0 150px; text-align:center; }
-      #swiper ul{width:225px; height:100%; margin:0 auto; }
-      #swiper li{width:25px; height:25px; margin-right:20px;  border-radius:50%; 
-                  background-color:rgba(204, 204, 204, 0.5); float:left; }
-      #swiper li a{width:100%; height:100%; float:left;}
-      #swiper li:hover, #swiper li a:focus{background-color:#777;}
+         /* 설명, 가격 */
+      #free_big .text{width:430px; overflow:hidden; padding:0 30px; font-weight:700; font-size:22px;}
+      #free_big .text .desc{padding:30px 0;}
+      #free_big .text .price{text-align:right;}
+      
+      /* ################################# midlle_box ################################# */
+      #middle_box{width: 100%; height: 250px; overflow:hidden; margin-top:50px; background-color:#000;}
+      #middle_box div{width: 1100px; height:100%; margin: 0 auto;}
+      #middle_box .desc {padding-top:30px; color: #fff; font-size: 40px; font-weight:700;}
+      #middle_box .desc span{line-height:50px;; font-size: 16px; color:#ccc;  font-weight:400;}
+      #middle_box a{color: #fff; font-weight:700;}
 
 
-         
-
-
-
-
-      /* ################################# News ################################# */
-      #news{width: 100%; background: powderblue;}
-
-      .news_inner{width: 1920px; overflow: hidden; margin: 0 auto;}
-      .news_inner ul{width: 1920px; height: 600px; padding-top: 200px; background: skyblue;}
-      .news_inner li{width: 260px; padding: 120px 20px;
-         margin-right: 30px;
-         background-color: beige;
-         text-align: center;
-         float: left;}
-      .news_inner h3{font-size: 30px; height: 120px;}
-      .news_inner .no3{width: 300px; height: 275px; margin-top: -30px; padding: 130px 30px;}
-      .news_inner .no3 h3{font-size: 35px;}
-      .news_inner .no3 .text{padding-top: 20px; font-size: 20px;}
-      .news_inner .no0{width: 140px; height: 225px;}
-      /*no0, no3 상자들은 디자인때문에 임의로 잡은것, 추후 변경 예정*/
+      /* ################################# recomended ################################# */
+      #recomended{width:100%; height:954px; background-color:#f7f7f7}
+      #recomended .reco_inn{width:1260px; overflow:hidden; margin:0 auto; background:red;}
+      /* 왼쪽 */
+      #recomended .left{width:235px; height:493px; background:blue; float:left;}
+      #recomended .left ul{width:100%;}
+      #recomended .left li{width:100%; margin-top:15px;}
+      #recomended .left a{width:100%;}
+      #recomended .left img{width:100%;}
+      /* 중간 */
+      #recomended .middle{width:470px; margin-top:15px; height:493px; background:purple; float:left;}
+      #recomended .middle p{width:100%; height:493px;}
+      #recomended .middle a{width:100%; height:100%;}
+      #recomended .middle img{width:100%;  height:100%;}
+      #recomended .middle
+      #recomended .middle
 
       /* ################################# Steam ################################# */
       #Steam{width: 100%; height: 450px;
@@ -199,4 +139,4 @@
       #Steam div{width: 980px; margin: 0 auto;}
       #Steam h3 {padding-top: 150px; color: #f00; font-size: 50px;}
       #Steam .desc {color: #fff; font-size: 20px; padding: 20px 0;}
-      #Steam .moreBox p {color: #fff; border: 1px solid #fff;}
+      #Steam .moreBox a {color: #fff; border: 1px solid #fff;}
