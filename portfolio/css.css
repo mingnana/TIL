@@ -1,4 +1,4 @@
-  *{margin:0; padding:0;}
+ *{margin:0; padding:0;}
       li{list-style:none;}
       a:link, a:visited{text-decoration:none; color:#000;}
 
@@ -107,7 +107,7 @@
       #free_big .text .price{text-align:right;}
       
       /* ################################# midlle_box ################################# */
-      #middle_box{width: 100%; height: 250px; overflow:hidden; margin-top:50px; background-color:#000;}
+      #middle_box{width: 100%; height: 250px; overflow:hidden; margin-top:50px; background-color:#201e1f;}
       #middle_box div{width: 1100px; height:100%; margin: 0 auto;}
       #middle_box .desc {padding-top:30px; color: #fff; font-size: 40px; font-weight:700;}
       #middle_box .desc span{line-height:50px;; font-size: 16px; color:#ccc;  font-weight:400;}
@@ -116,20 +116,42 @@
 
       /* ################################# recomended ################################# */
       #recomended{width:100%; height:954px; background-color:#f7f7f7}
-      #recomended .reco_inn{width:1260px; overflow:hidden; margin:0 auto; background:red;}
-      /* 왼쪽 */
-      #recomended .left{width:235px; height:493px; background:blue; float:left;}
-      #recomended .left ul{width:100%;}
-      #recomended .left li{width:100%; margin-top:15px;}
-      #recomended .left a{width:100%;}
-      #recomended .left img{width:100%;}
+      #recomended .reco_inn{width:1460px; height:688px; overflow:hidden;  padding-top:40px; margin:0 auto;}
+      /* 왼쪽 */ 
+      #recomended .left{width:335px; height:100%; float:left;}
+      #recomended .left ul{width:100%; height:100%;}
+      #recomended .left li{width:100%; height:327px; margin-top:17px;}
+      #recomended .left a{width:100%; height:100%;}
+      #recomended .left img{width:100%; height:100%;}
       /* 중간 */
-      #recomended .middle{width:470px; margin-top:15px; height:493px; background:purple; float:left;}
-      #recomended .middle p{width:100%; height:493px;}
+      #recomended .middle{width:550px; margin:17px; height:100%; float:left;}
+      #recomended .middle p{width:100%; height:791px;}
       #recomended .middle a{width:100%; height:100%;}
       #recomended .middle img{width:100%;  height:100%;}
-      #recomended .middle
-      #recomended .middle
+      /* 오른쪽 */
+      #recomended .right{width:541px; height:100%; float:left;}
+      #recomended .right ul{width:100%; height:100%;}
+      #recomended .right li{height:337px; margin-top:17px;}
+      /* 오른쪽-위 */
+      #recomended .top{width:524px; height:100%;}
+      #recomended .top a{width:100%; height:100%;}
+      #recomended .top img{width:100%; height:100%;}
+      /* 오른쪽-밑 */
+      #recomended .bottom{width:253px; height:100%; margin-right:17px; float:left;}
+      #recomended .bottom a{width:100%; height:100%;}
+      #recomended .bottom img{width:100%; height:100%;}
+      /* morebox */
+      #recomended .moreBox{width:100%; padding-top:30px;}
+      #recomended .moreBox a{background-color:#201e9a; text-align:center; margin:0 auto; color:#fff; border:none;}
+
+      /* ################################# full ################################# */
+      #full{width:100%; height:100%;}
+      #full p{width:100%;}
+      #full img{width:100%;}
+
+      /* ################################# f_text ################################# */
+      #f_text{width:100%; height:953px;}
+      #f_text p{width:100%; height:100%; background-color:#201e1f;}
 
       /* ################################# Steam ################################# */
       #Steam{width: 100%; height: 450px;
