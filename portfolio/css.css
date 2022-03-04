@@ -2,14 +2,15 @@
       li{list-style:none;}
       a:link, a:visited{text-decoration:none; color:#000;}
 
-      body{font-family:"Roboto"}
+      body{font-family:굴림}
       #wrap{min-width:1025px; width:100%;}
 
       /* ################################# conatiner 공통작업 ################################# */
       #container{width:100%;}
-      #container h2{width:100%; padding:50px 0 0;
+      #container h2{width:100%; padding:50px 0 0; text-align:center;
          font-size:40px;
-         text-align:center;}
+         font-family:궁서;
+         font-weight:900;}
       .moreBox{width:100%; height:50px;
          padding:20px 0 50px;}
       .moreBox a{width:150px; line-height:50px; font-weight:700; border:2px solid #aaa; display:block; text-align:center;}
@@ -21,7 +22,7 @@
 
       /* #################################  txt  ################################# */
 
-      #txt {width:100%; height:954px; background-color:#f7f7f7;}
+      #txt {width:100%; height:954px; background-color:#f5f5f5;}
       #txt .txt_inner {width:100%;}
       #txt h2 {line-height:90px; font-size:80px; padding:280px 0 50px; font-family:batang;}
       #txt .text {font-size:18px; text-align:center;}
@@ -44,78 +45,27 @@
       #sale{width:100%; height:954px; background-color:#f7f7f7;}
       #sale h2{margin-bottom:40px;}
       /* 윗부분 */
-      #sale .sale_inn_small{width:1165px; height:250px; margin:0 auto 50px;}
+      #sale .sale_inn_small{width:1165px; height:250px; margin:0 auto 80px;}
       #sale .sale_inn_small ul{width:100%; height:100%;}
       #sale .sale_inn_small li{width:213px; height:100%; margin-left:20px; float:left;}
       #sale .sale_inn_small a{width:100%; height:100%; display:block;}
       #sale .sale_inn_small img{width:100%; height:100%;}
       /* 아랫부분 */
-      #sale .sale_inn_big{width:1165px; overflow:hidden; margin:0 auto;}
-      #sale .sale_inn_big p{width:542px; height:480px; margin-left:40px; text-align:center; float:left;}
-      #sale .sale_inn_big a{width:100%; display:block;}
-      #sale .sale_inn_big img{width:100%;}
-
-      /* ################################# Free ################################# */
-      #free{width:100%; height:585px; overflow:hidden; background-color:#201e1f;}
-      #free_inn{width:1590px; height:100%; margin:50px auto 0;}
-      /* 왼쪽 */
-      #left{width:760px; overflow:hidden; float:left;}
-      #left h3{color:#fff; height:100px; font-size:50px; text-indent:30px; }
-      #left .imgArea{width:100%; height:406px;}
-      #left .imgs{width:350px; height:337px; margin-left:30px; float:left;}
-      #left .imgs a{width:100%; height:100%; display:block;}
-      #left .imgs .img{width:100%; height:100%; display:block; }
-      #left .imgs img{width:100%; height:100%; }
-      /* 이미지 텍스트 */
-      #left .text{width:350px; text-align:center; font-size:25px; font-weight:700; color:#fff; display:block;}
-      
-      /* 오른쪽 */
-      #box{width:800px; height:506px; margin-left:30px; float:left;}
-      #box p{width:100%; height:100%;}
-      #box img{width:100%; height:100%;}
-
-      /* ################################# Free_small ################################# */
-      #free_small{width:100%; height:300px; padding-top:50px; background-color:#201e9a;}
-      #free_small div{width:1398px; height:250px; margin:0 auto;}
-      #free_small ul{width:100%; height:100%;}
-      #free_small li{width:213px; height:100%; margin-left:20px; float:left;}
-      #free_small a{width:100%; height:100%; display:block;}
-      #free_small img{width:100%; height:100%;}
-
-      /* ################################# free_big ################################# */
-      #free_big{width:100%; height:954px;}
-      #free_big{width:1260px; height:548px; margin:40px auto 0; border:3px solid #201e9a; }
-      /* 왼쪽 */
-      #free_big .left{width:740px; height:338px; padding:80px 0; background-color:#fff; float:left;}
-      #free_big .left p{width:100%;height:100%;}
-      #free_big .left a{width:100%; height:100%; display:block;}
-      #free_big .left img{width:100%;}
-
-      /* 오른쪽 */
-      #free_big .right{width:520px; height:100%; background-color:#201e9a; color:#fff; float:left;}
-      #free_big .right h3{line-height:120px; font-size:30px; text-align:center;}
-         /* 이미지 */
-      #free_big .imgs{width:100%; height:310px; background-color:#f7f7f7;}
-      #free_big .imgs ul{width:100%; height:100%; }
-      #free_big .imgs li{width:230px; margin:15px 0 0 20px; float:left;}
-      #free_big .imgs a{width:100%; height:100%; display:block;}
-      #free_big .imgs img{width:100%;}
-      
-         /* 설명, 가격 */
-      #free_big .text{width:430px; overflow:hidden; padding:0 30px; font-weight:700; font-size:22px;}
-      #free_big .text .desc{padding:30px 0;}
-      #free_big .text .price{text-align:right;}
+      #sale .sale_inn_big{width:1220px; overflow:hidden; margin:0 auto;}
+      #sale .sale_inn_big p{width:570px; /*height:460px;*/ margin-left:40px; text-align:center; float:left;}
+      #sale .sale_inn_big a{width:100%; height:100%; display:block; }
+      #sale .sale_inn_big img{width:100%; height:100%;  border-radius: 50px 50px; }
       
       /* ################################# midlle_box ################################# */
-      #middle_box{width: 100%; height: 250px; overflow:hidden; margin-top:50px; background-color:#201e1f;}
+      #middle_box{width: 100%; height: 300px; overflow:hidden; margin-top:50px; background-color:#201e1f;}
       #middle_box div{width: 1100px; height:100%; margin: 0 auto;}
-      #middle_box .desc {padding-top:30px; color: #fff; font-size: 40px; font-weight:700;}
+      #middle_box .desc {padding-top:80px; color: #fff; font-size: 40px; font-weight:700;}
       #middle_box .desc span{line-height:50px;; font-size: 16px; color:#ccc;  font-weight:400;}
       #middle_box a{color: #fff; font-weight:700;}
 
 
       /* ################################# recomended ################################# */
-      #recomended{width:100%; height:954px; background-color:#f7f7f7}
+      #recomended{width:100%; height:954px; background-color:#f5f5f5}
       #recomended .reco_inn{width:1460px; height:688px; overflow:hidden;  padding-top:40px; margin:0 auto;}
       /* 왼쪽 */ 
       #recomended .left{width:335px; height:100%; float:left;}
@@ -144,21 +94,30 @@
       #recomended .moreBox{width:100%; padding-top:30px;}
       #recomended .moreBox a{background-color:#201e9a; text-align:center; margin:0 auto; color:#fff; border:none;}
 
-      /* ################################# full ################################# */
-      #full{width:100%; height:100%;}
-      #full p{width:100%;}
-      #full img{width:100%;}
 
-      /* ################################# f_text ################################# */
-      #f_text{width:100%; height:953px;}
-      #f_text p{width:100%; height:100%; background-color:#201e1f;}
+      /* ################################# update ################################# */
+      #update{width:100%; height:954px; margin:0 auto; background-color:#fff}
+
+      /* 위_메뉴 */
+      #update .menu{width:100%; height:40px;}
+      #update .menu ul{width:873px; height:30px; padding-top:10px; font-weight:700; text-align:center;  margin:50px auto ;}
+      #update .menu li{width:auto; margin-right:5px; padding:0 15px; height:20px; line-height:20px; border-right:1px solid #ccc; float:left;}
+      #update .menu a{width:100%; height:100%;  color:#333;}
+
+      /* 아래_게임 */
+      #update .game{width:810px; height:640px; margin:0 auto;}
+      #update .game ul{width:100%; height:100%; }
+      #update .game li{width:250px; height:300px; margin:20px 20px 0 0; float:left;}
+      #update .game a{width:100%; height:100%; display:block;}
+      #update .game img{width:100%; height:100%;}
+
 
       /* ################################# Steam ################################# */
-      #Steam{width: 100%; height: 450px;
+      #EA{width: 100%; height: 450px;
          background-image: url("img/s3.jpg");
          background-repeat: no-repeat;
          background-position: center center;}
-      #Steam div{width: 980px; margin: 0 auto;}
-      #Steam h3 {padding-top: 150px; color: #f00; font-size: 50px;}
-      #Steam .desc {color: #fff; font-size: 20px; padding: 20px 0;}
-      #Steam .moreBox a {color: #fff; border: 1px solid #fff;}
+      #EA div{width: 980px; margin: 0 auto;}
+      #EA h3 {padding-top: 150px; color: #f00; font-size: 50px;}
+      #EA .desc {color: #fff; font-size: 20px; padding: 20px 0;}
+      #EA .moreBox a {color: #fff; border: 1px solid #fff;}
