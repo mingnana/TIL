@@ -1,0 +1,21 @@
+@charset "EUC-KR";
+    *{margin:0; padding:0;}
+      li{list-style-type:none;}
+      #wrap{min-width:100%;}
+
+      /* 공통작업 */
+      section{width:200px; text-align:center;}
+      section div{width:100%; height:200px; background-color:gold; position:relative;}
+      section p{width:10px; height:10px; background-color:#000; position: absolute;}
+
+      /* ############  box1  ############  */
+      #box1{width:100%; border-bottom:1px solid #ccc;}
+      #box1 section{margin:50px auto 0;}
+      #box1 p{left:25px; top:25px; transition: width 0.4s linear, height 0.4s linear;}
+      #box1 div:hover p{width:150px; height:150px;}
+      
+      /* ############  box2  ############  */
+      #box2{width:100%;}
+      #box2 section{margin:20px auto 0;}
+      #box2 p{left:95px; top:95px; transform:scale(1,1); transition:transform 0.4s linear;}
+      #box2 div:hover p{transform:scale(15,15)}
