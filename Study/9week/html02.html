@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin:0; padding:0;}
+        h2{text-align:center; color:#ccc; margin:50px 0; }
+        div{width:600px; height:300px; margin:0 auto; position:relative;
+            perspective: 1000px;}
+
+        .imgArea{left:0; z-index:1;
+            transition:all 0.4s linear;
+            background-size:100% 100%;}
+
+        p{width:300px; height:100%; position:absolute; top:0;}
+
+        .right1{left:0;
+            background-image: url("img/03.jpg");
+            background-size:100% 100%;}
+
+        .left0{left:0; transform:rotatey(0deg);
+            transition:all 0.4s linear;
+            background-image: url("img/01.jpg");
+            background-size:100% 100%;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>PERSPECTIVE를 이용한 BOOK 만들기</h2>
+    <div>
+        <p class="right1">
+        </p>
+        <div class="imgArea">
+            <p class="left0">
+            </p>
+        </div>
+        <p class="right0">
+        </p>
+</body>
+</html>
