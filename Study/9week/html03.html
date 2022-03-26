@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin:0; padding:0;}
+        body{
+            background-image: linear-gradient(top,  rgb(82, 138, 243) 0%,rgb(68, 72, 77) 70%, rgb(34, 35, 36) 100%);
+            background-image:-webkit-linear-gradient(top,  rgb(82, 138, 243) 0%,rgb(68, 72, 77) 70%, rgb(34, 35, 36) 100%);
+            background-image:-moz-linear-gradient(top,  rgb(82, 138, 243) 0%,rgb(68, 72, 77) 70%, rgb(34, 35, 36) 100%);
+            background-image:-o-linear-gradient(top,  rgb(82, 138, 243) 0%,rgb(68, 72, 77) 70%, rgb(34, 35, 36) 100%);
+            background-image:-ms-linear-gradient(top,  rgb(82, 138, 243) 0%,rgb(68, 72, 77) 70%, rgb(34, 35, 36) 100%);
+            height:100%;}
+        h2{width:900px; margin:50px auto 0;}
+        #box{width:600px; margin:0 auto; position:relative;}
+        /* .top{width:300px; height:50px; line-height:50px; background-color:#555; color:#fff;
+            position:absolute; left:50px; top:50px; transform:skew(0deg,12deg);}
+        .left{width:300px; height:200px; 
+            position:absolute; left:50px; top:85px; transform:skew(0deg,12deg);}
+        .left video{width:100%; height:100%;}
+        .right{width:144px; height:170px; padding-top:10px;
+            background-image:linear-gradient(270deg, rgb(122, 122, 122), #ccc);
+            position:absolute; left:352px; top:96px;  transform:skew(0deg,-28deg);}
+        .right span{color:#ff0;} */
+        
+        /* 그림자 */
+        .bottom_left{width:300px; height:200px;
+            background-image:linear-gradient(to bottom, rgb(255, 255, 255,0.5), rgba(0,0,0,0));
+            position:absolute; left:50px; top:284px; transform:skew(0deg,12deg);}
+        .bottom_right{width:144px; height:200px;
+            background-image:linear-gradient(to bottom, rgba(235, 235, 235, 0.5), rgba(61, 61, 61, 0));
+            position:absolute; left:350px; top:275px;  transform:skew(0deg,-28deg);}
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <h2>movie영역</h2>
+        <div id="box">
+            <p class="top">APPLE_MOVIE</p>
+            <p class="left">
+                <video controls>
+                    <source src="video/예술의 끝을 달리는 애플 광고(Homepod).mp4"  type="video/mp4">
+                </video>
+            </p>
+            <p class="right"><span>APPLE CF:</span> transform:Skew, 2021</p>
+            <p class="bottom_left"></p>
+            <p class="bottom_right"></p>
+        </div>
+    </div>
+</body>
+</html>
