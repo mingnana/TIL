@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin:0; padding:0;}
+        #wrap{width:600px; margin:50px auto 0; padding:50px;  border:1px dotted #ccc;}
+        p{width:600px; height:360px;
+            animation: img 5s infinite alternate;
+            background-image:url("img/01.jpg");
+            background-size:100% 100%;
+            background-repeat:no-repeat;}
+
+        @keyframes img{
+            0%{background-image:url("img/01.jpg");}
+            50%{background-image:url("img/02.jpg");}
+            100%{background-image:url("img/03.jpg");}
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <p>
+        </p>
+    </div>
+</body>
+</html>
