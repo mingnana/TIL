@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *, body, ul, li, p{margin:0; padding:0;}
+        li{list-style-type:none;}
+
+        /* ################################# 반응형_일반pc################################# */
+		@media all and (min-width:1025px){
+            
+
+            #wrap{min-width:1025px; width:100%;}
+            #google{width:1025px; margin:0 auto;}
+            /* ############ header ############ */
+            #header{width:100%; padding:50px 0;}
+            #header p{width:200px; margin:0 auto;}
+            #header img{width:100%; height:100%;}
+            
+            /* ############ container ############ */
+            #container{width:100%;}
+            #container #video{width:830px; margin:0 auto;}
+            #container #video video{width:100%}
+            
+            /* form */
+            #form{width:100%;}
+            #form form{width:885px;  margin:30px auto;}
+            #form fieldset, legend{border:none;}
+            #form input{width:100%; padding:7px 0; border:1px solid #ccc;
+                font-weight:700; text-indent:20px;}
+
+            /* imgArea */
+            #imgArea{width:100%;}
+            #imgArea ul{width:885px; margin:0 auto;}
+            #imgArea li{width:210px; margin-left:15px; margin-bottom:10px; float:left;}
+            #imgArea li:first-child, #imgArea li:nth-child(5){margin:0;}
+
+            #imgArea li a{width:100%; }
+            #imgArea li img{width:100%;}
+            #imgArea ul:after{content:""; display:block; clear:both;}
+
+            /* li기능 */
+            #imgArea li:hover img{box-shadow:3px 3px 5px #777;}
+
+            /* ############ footer ############ */
+            #footer{width:100%; padding:20px 0;}
+            #footer p{text-align:center; letter-spacing: 2px; color:#999; font-weight:700;}
+		
+        }
+        /* ################################# 반응형_태블릿pc################################# */
+        @media all and (min-width:768px) and (max-width:1024px){
+			
+            #wrap{min-width:768px; width:100%;}
+            #google{width:768px; margin:0 auto;}
+            /* ############ header ############ */
+            #header{width:100%; padding:50px 0;}
+            #header p{width:200px; margin:0 auto;}
+            #header img{width:100%; height:100%;}
+            
+            /* ############ container ############ */
+            #container{width:100%;}
+            #container #video{width:750px; margin:0 auto;}
+            #container #video video{width:100%}
+            
+            /* form */
+            #form{width:100%; }
+            #form form{width:760px; margin:30px auto;}
+            #form fieldset, legend{border:none;}
+            #form input{width:100%; padding:7px 0; border:1px solid #ccc;
+                font-weight:700; text-indent:20px;}
+
+            /* imgArea */
+            #imgArea{width:100%;}
+            #imgArea ul{width:765px; margin:0 auto;}
+            #imgArea li{width:245px; margin-left:15px; margin-bottom:10px; float:left;}
+            #imgArea li:first-child, #imgArea li:nth-child(4){margin:0;}
+            #imgArea li:nth-child(7){margin-left:130px;}
+
+            #imgArea li a{width:100%; }
+            #imgArea li img{width:100%;}
+            #imgArea ul:after{content:""; display:block; clear:both;}
+
+            /* li기능 */
+            #imgArea li:hover img{box-shadow:3px 3px 5px #777;}
+
+            /* ############ footer ############ */
+            #footer{width:100%; padding:20px 0;}
+            #footer p{text-align:center; letter-spacing: 2px; color:#999; font-weight:700;}
+		
+        }
+        /* ################################# 반응형_스마트폰 가로 ################################# 가로 */
+        @media all and (min-width:481px) and (max-width:767px){
+			
+            #wrap{min-width:481px; width:100%;}
+            #google{width:481px; margin:0 auto;}
+            /* ############ header ############ */
+            #header{width:100%; padding:50px 0;}
+            #header p{width:200px; margin:0 auto;}
+            #header img{width:100%; height:100%;}
+            
+            /* ############ container ############ */
+            #container{width:100%;}
+            #container #video{width:470px; margin:0 auto;}
+            #container #video video{width:100%}
+            
+            /* form */
+            #form{width:100%; }
+            #form form{width:480px; margin:30px auto;}
+            #form fieldset, legend{border:none;}
+            #form input{width:100%; padding:7px 0; border:1px solid #ccc;
+                font-weight:700; text-indent:20px;}
+
+            /* imgArea */
+            #imgArea{width:100%;}
+            #imgArea ul{width:480px; margin:0 auto;}
+            #imgArea li{width:231px; margin-left:15px; margin-bottom:10px; float:left;}
+            #imgArea li:nth-child(odd){margin-left:0;}
+
+            #imgArea li a{width:100%; }
+            #imgArea li img{width:100%;}
+            #imgArea ul:after{content:""; display:block; clear:both;}
+
+            /* li기능 */
+            #imgArea li:hover img{box-shadow:3px 3px 5px #777;}
+
+            /* ############ footer ############ */
+            #footer{width:100%; padding:20px 0;}
+            #footer p{text-align:center; letter-spacing: 2px; color:#999; font-weight:700;}
+		
+		}
+
+        /* ################################# 반응형_스마트폰 세로 ################################# 세로 */
+        @media all and (min-width:320px) and (max-width:480px){
+			
+            #wrap{min-width:320px; width:100%; }
+            #google{width:320px; margin:0 auto;}
+
+            /* ############ header ############ */
+            #header{width:100%; padding:50px 0; }
+            #header p{width:200px; margin:0 auto;}
+            #header img{width:100%; height:100%;}
+            
+            /* ############ container ############ */
+            #container{width:100%;}
+            #container #video{width:310px; margin:0 auto;}
+            #container #video video{width:100%}
+            
+            /* form */
+            #form{width:100%;}
+            #form form{width:320px; margin:30px auto;}
+            #form fieldset, legend{border:none;}
+            #form input{width:100%; padding:7px 0; border:1px solid #ccc;
+                font-weight:700; text-indent:20px;}
+
+            /* imgArea */
+            #imgArea{width:100%}
+            #imgArea ul{width:320px; margin:0 auto;}
+            #imgArea li{width:320px; margin-bottom:10px;}
+
+            #imgArea li a{width:100%; }
+            #imgArea li img{width:100%;}
+            #imgArea ul:after{content:""; display:block; clear:both;}
+
+            /* li기능 */
+            #imgArea li:hover img{box-shadow:3px 3px 5px #777;}
+
+            /* ############ footer ############ */
+            #footer{width:100%; padding:20px 0;}
+            #footer p{text-align:center; letter-spacing: 2px; color:#999; font-weight:700;}
+		
+		}
+
+    </style>
+</head>
+<body>
+   <div id="wrap">
+        <div id="google">
+            <header id="header">
+                <p><img src="google/img/logo.png" alt="로고"></p>
+            </header>
+            <div id="container">
+                <div id="video">
+                    <video controls poster="google/img/audi.jpg" autoplay muted>
+                        <source src="google/img/youtube.mp4" type="video/mp4"/>
+                    </video>
+                </div>
+                <div id="form">
+                    <form action="https://www.google.com/search" method="get">
+                        <fieldset>
+                            <legend></legend>
+                            <input type="text" id="text" name="q" placeholder="Google검색 또는 URL입력">
+                        </fieldset>
+                    </form>
+                </div>
+                <div id="imgArea">
+                    <ul>
+                        <li>
+                            <a href="#" title="naver">
+                                <img src="google/img/naver.jpg" alt="naver">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="daum">
+                                <img src="google/img/daum.jpg" alt="daum">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="audi">
+                                <img src="google/img/audi.jpg" alt="audi">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="nintendo">
+                                <img src="google/img/nintendo.jpg" alt="nintendo">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="lg">
+                                <img src="google/img/lg.jpg" alt="lg">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="samsung">
+                                <img src="google/img/samsung.jpg" alt="samsung">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="sony">
+                                <img src="google/img/sony.jpg" alt="sony">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="w3c">
+                                <img src="google/img/w3c.jpg" alt="w3c">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <footer id="footer">
+                <p>
+                    GOOGLE:MEDIAQUERY
+                </p>
+            </footer>
+        </div>
+   </div> 
+</body>
+</html>
