@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // push
+        // var li = ['a', 'b', 'c', 'd', 'e'];
+
+        // li.push('f'); // 배열안에다 하나의 값을 추가함 (맨뒤쪽)
+        // li = li.concat(['f','g']); // 배열안에다 여러개의 값을 추가함
+        // li.unshift('z'); // 배열안에다 하나의 값을 추가함 (맨 앞쪽)
+
+        // alert(li);
+
+        var a =['a', 'b', 'c']
+        // array.splice(index, howmany, element1, ...);
+        // index = 배열의 숫자 (b출력)
+        // howmany = b의 값 앞에 element를 통해 값들을 추가함, index에 해당하는 위치를 1로 시작(howmany를 1로 지정했다면 본인삭제+앞쪽에 추가)
+        // element = 추가할 값
+        a.splice(1,1,'x', 'y');
+
+        alert(a);
+        
+
+    </script>
+</body>
+</html>
