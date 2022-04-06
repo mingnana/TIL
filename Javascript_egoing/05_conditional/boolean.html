@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 조건문에 사용될 수 있는 데이트형은 불린 외에 0(false) 과 1(true)도 가능
+        // 
+        if(0){
+            alert(1);
+        }
+        if(1){
+            alert(2);
+        }
+
+        // false로 간주하는 데이터형
+        // ''(빈문자열), undefined, nall, NaN
+
+        if(''){
+            alert('빈문자열');
+        }
+        if(undefined){  // undefined는 홀수로 간주
+            alert('빈문자열');
+        }
+
+        var a;
+        if(!a){     // !는 true와 false를 바꿔줌
+            alert('값이 할당되지 않은 변수')    // a의 값이 할당되지않을 경우에는 undefined로 처리됨
+        }   // !에 의해 false의 값이 바뀌면서 true로 인식이 돼 값이 출력됨!
+
+        if(null){  
+            alert('null');
+        }        
+
+        if(NaN){  
+            alert('NaN');
+        }        
+    </script>
+</body>
+</html>
