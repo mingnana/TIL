@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var grades = {
+            'list' : {'egoing':10, 'k8805' : 8, 'sorigari': 80},
+            'show' : function(){
+                for(var name in this.list){
+                    console.log(name, this.list[name]);     // 콤마를 통해 여러개의 값을 출력 가능
+                }
+                // console.log(this.list);    // 약속된 변수. 함수가 속해있는 객체== var grades
+                    // this.list == 해당 객체가 가지고 있는 list의 데이터값 호출
+            }
+        }
+        // grades['show']();
+        grades.show(); 
+    </script>
+</body>
+</html>

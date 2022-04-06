@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // var grades = {'egoing':10, 'k8805':6, 'sorialgi':80}
+
+        var grades = {};    // 정의 첫번째 방법
+        // var grades = new Object(); // 정의 두번째 방법
+        
+        // egoing은 key이고, 10은 value
+        grades['egoing'] = 10;  
+        // grades['k8805'] = 6;     // 같은 형태로 출력되는 방식_1
+        // grades.k8805 = 6;   // 같은 형태로 출력되는 방식_2
+        grades['k88'+'05']    // 같은 형태로 출력되는 방식_3
+        grades['sorialgi'] = 80;
+
+
+        alert(grades['sorialgi']);
+
+    </script>
+</body>
+</html>
