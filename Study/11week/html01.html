@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>microsoft</title>
+    <style>
+        *, body, header, nav, section, footer, p , div, form, ul, li{margin:0; padding:0;}
+        li{list-style-type:none;}
+        a:link, a:visited{text-decoration:none; color:#000;}
+        
+
+        #wrap{width:100%}
+
+        /* ########  header  ######## */
+        #headerWrap{width:100%;}
+        #header{width:900px; margin:50px auto 10px;}
+        #header:after{content:""; display:block; clear:both;}
+        /* 로고 */
+        h1{width:200px; float:left;}
+        h1 a{width:100%; display:block;}
+        h1 img{width:100%;}
+    
+        /* 검색창 */
+        #form{width:338px; margin-left:220px; margin-top:10px; float:left;}
+        #form input{width:300px; border:1px solid #ccc; height:30px; text-indent:15px; float:left;}
+        #form span{width:30px; margin-left:5px; float:left;}
+        #form span img{width:100%;}
+        form:after{content:""; display:block; clear:both;}
+        /* nav */
+        #gnb{width:100%; overflow:hidden; padding:10px 0; }
+        #gnb ul{width:100%;}
+        #gnb li{display:inline; padding:0 10px;}
+        #gnb a{color:#00f;}
+        /* #gnb:after{content:""; display:block; clear:both;} */
+
+        /* ########  container  ######## */
+        #container{width:100%;}
+        /* visual */
+        #visual{width:100%; margin:0 auto; position:relative;}
+        #visual .back img{width:100%;}
+        #visual .textArea{width:225px; height:225px; padding:20px 10px 0 10px;
+            position:absolute; left:5%; top:20%; 
+            background-color:#07a; color:#fff;}
+        #visual .textArea h2{font-size:25px;}
+        #visual .textArea p{padding-top:15px; font-size:19px;}
+        #visual:after{content:""; display:block; clear:both;}
+
+        /* feature */
+        #feature{width:100%; padding-top:50px;}
+        #fea_inn{width:790px; margin:0 auto;}
+        #fea_inn div{width:250px;margin-left:20px; float:left; }
+        #fea_inn div:first-child{margin-left:0;}
+        #fea_inn .text{text-align:center;}
+        #fea_inn img{width:100%;}
+        #fea_inn div:after{content:""; display:block; clear:both;}
+        #fea_inn:after{content:""; display:block; clear:both;}
+
+        /* ########  footer  ######## */
+        #footer{width:100%;}
+        #footer ul{width:830px; margin:0 auto; text-align:center;}
+        #footer li{display:inline; padding:0 10px;}
+
+        /*##################### 미디어 쿼리 영역 ####################*/
+		/*######### 태블릿 pc버전 ##########*/
+
+		@media all and (min-width:768px) and (max-width:1024px){
+			
+			/*######### header ########*/
+			#header{width:720px;}
+            #form{margin-left:180px;}
+            #form input{width:230px;}
+
+			/*######### visual ########*/
+			#visual{width:748px;}
+            #visual .textArea{width:180px; height:180px; left:0; top:10%; }
+            #visual .textArea p{font-size:15px;}
+
+			/*######### feature ########*/
+            #fea_inn{width:730px}
+            #fea_inn div{width:230px; font-size:14px;}
+
+			/*############ footer ###########*/
+            #footer ul{width:748px; font-size:14px;}
+		}
+
+        /*############ 스마트폰 가로버전 ###########*/
+		@media all and (min-width:481px) and (max-width:767px){
+			
+			
+			/*######### header ########*/
+			#header{width:100%; margin:50px 0 0;}
+            h1{width:150px;}
+            #form{width:190px; margin-left:60px; margin-top:3px;}
+            #form input{width:150px;}
+            #gnb ul{background-color:#07a; padding:10px 0; text-align:center;}
+            #gnb li{padding:0 20px;}
+            #gnb li a{color:#fff;}
+
+			/*######### visual ########*/
+			#visual{min-width:460px;}
+            #visual .textArea{width:100%; height:135px; position:static;}
+            #visual .textArea p{font-size:17px;}
+            #visual .desc{min-width:460px; text-overflow: ellipsis; white-space:nowrap; overflow:hidden; }
+
+			/*######### feature ########*/
+            #fea_inn{width:360px;text-align:center; margin:0px auto;}
+            /* #fea_inn img{width:100%;} */
+            #fea_inn div{width:360px; height:210px; margin:0; font-size:12px;}
+
+			/*############ footer ###########*/
+            #footer ul{width:460px; font-size:13px; padding-top:10px;}
+            #footer li:first-child{display:block;}
+		}
+        /*############ 스마트폰 세로버전 ###########*/
+		@media all and (min-width:320px) and (max-width:480px){
+			
+			
+			/*######### header ########*/
+			#header{width:100%; margin:50px 0 0; }
+            h1{width:250px; margin:0 auto; float:none;}
+            #form{width:290px; float:none; margin:0; margin:0 auto;}
+            #form input{width:250px; margin:0 auto;}
+            #gnb ul{text-align:center;}
+            #gnb li{padding:10px 20px; border-bottom: 1px solid #fff;
+            display:block; background-color:#07a;}
+            #gnb li a{color:#fff;}
+
+			/*######### visual ########*/
+			#visual{min-width:300px;}
+            #visual .textArea{width:100%; height:135px; padding:0; position:static;}
+            #visual .textArea p{font-size:17px;}
+            #visual .desc{min-width:300px; text-overflow: ellipsis; white-space:nowrap; overflow:hidden; }
+
+			/*######### feature ########*/
+            #fea_inn{width:360px;text-align:center; margin:0px auto;}
+            /* #fea_inn img{width:100%;} */
+            #fea_inn div{width:360px; margin:0; font-size:15px;}
+            #fea_inn .text{padding:3px 0;}
+
+
+			/*############ footer ###########*/
+            #footer ul{width:300px; font-size:13px; padding-top:30px;}
+            #footer li:first-child{display:block;}
+		}
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="headerWrap">
+            <header id="header">
+                <h1>
+                    <a href="#" title="로고">
+                        <img src="img/mslogo.png" alt="로고"/>
+                    </a>
+                </h1>
+                <div id="form">
+                    <form action="https://www.microsoft.com/ko-kr/search" method="get">
+                        <input type="text" id="search" name="q" placeholder="Microsoft.com 검색">
+                        <span>
+                            <img src="img/search.ltr.png" alt="아이콘">
+                        </span>
+                    </form>
+                </div>
+                <nav id="gnb">
+                    <ul>
+                        <li>
+                            <a href="#" title="구매">
+                                구매Ⅴ
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="제품">
+                                제품Ⅴ
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="다운로드">
+                                다운로드Ⅴ
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="지원">
+                              지원Ⅴ
+                            </a>
+                        </li>
+                    </ul>
+                </nav>                
+            </header>
+        </div>
+        <div id="container">
+            <div id="visual">
+                <p class="back">
+                    <img src="img/main.jpg" alt="메인">
+                </p>
+                <div class="textArea">
+                    <h2>Surface</h2>
+                    <p class="desc">기존의 노트북을 바꿀만한 가치의 태블릿을 만나 보세요. Surface Pro3.</p>
+                    <p>자세히보기</p>
+                </div>
+            </div>
+            <div id="feature">
+                <div id="fea_inn">
+                    <div class="no1">
+                        <p class="img">
+                            <img src="img/b01.png" alt="no1">
+                        </p>
+                        <p class="text">
+                            xBox One 올해 최고의 게임
+                        </p>                        
+                    </div>
+                    <div class="no2">
+                        <p class="img">
+                            <img src="img/b02.jpg" alt="no2">
+                        </p>
+                        <p class="text">
+                            이제 Office 문서를 iPad와 phone에서 무료로 만들고 편집하세요.
+                        </p>                        
+                    </div>
+                    <div class="no3">
+                        <p class="img">
+                            <img src="img/b03.jpg" alt="no3">
+                        </p>
+                        <p class="text">
+                            microsoft Store에서 멋진 선물을 쇼핑하세요
+                        </p>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer id="footer">
+            <ul>
+                <li>문의처 (고객 지원 센터) : 1577-9700</li>
+                <li>개인정보취급방침 및 청소년보호정책</li>
+                <li>사용약관</li>
+                <li>상표</li>
+                <li>광고정보</li>
+                <li>2021 Microsoft</li>
+            </ul>
+        </footer>
+    </div>
+</body>
+</html>
