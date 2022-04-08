@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 패턴을 찾았다면(컴파일을 했다면) 그에 해당하는 정보를 추출할 수 있도록 함
+        // 여러가지 정보중 url에만 해당하는 정보만을 추출할 수 있고, 이에 기능을 넣을 수 있음
+
+        // var pattern = /a/;  // 패턴이 들어있다!
+        // pattern.exec('abcde'); 
+        // 결과값으로 ["a"] 출력!!
+        // 찾고자하는 것은 문자열 "a"이며, 정규표현식(pattern)을 실행(exec)할때 찾고자 하는 인자 내에 정보('abcde')를 담고있는 값 = a출력
+
+        // var patten = /a./   // . == 어떤 형태든 상관없이 무조건 문자가 하나 와야함
+        // pattern.exec('abcde') 
+        // a. == a와 문자열 하나를 찾고자 했으니 ["ab"] 출력!!
+
+        var pattern = /a/;
+        pattern.exec('bcdef');
+        // 찾고자하는 문자열 a가 없으니 ["null"] 출력!!
+
+        pattern.test('abcde');  // test는 exec와 같이 정규표현식에 포함된 식, 검색의 대상이 되는 인자내에 찾고자하는 값이 있다면 "true" 출력, 없다면 "false" 출력
+        // [true] 출력
+
+        pattern.test('bcde');
+        // [false] 출력
+
+        // exec는 추출, test는 값이 있는지 없는지 test
+    </script>
+</body>
+</html>
