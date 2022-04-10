@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <script>
+     (\w+)\s(\s+)
+     // () : 그룹으로 각각 묶음
+     // \w : 문자, a~z, A~Z, 0~9 모두 다 포함
+     //  + : 앞에있는 문자가 하나이상인 경우 == ex) "AA", "coding"(문자 2개이상)인 경우 이에 해당함
+     // \s : 공백, 띄워쓰기
+
+    var pattern = /(\w+)\s(\w+)/;
+    var str = "coding everybody";
+    var result = str.replace(pattern, "$2", "$1");
+    // pattern에 해당되는 문자를 뒤에있는 값인 $2 (두번째 괄호),$1(첫번째 괄호)로 바꾼다.
+    // 기존 $2 값인 everybody는 replace에 의해 앞으로 이동
+    // 기존 공백의 값은 ", "로 변경
+    // 기존 $1 값인 coding은 replace에 의해 뒤로 이동  
+    console.log(reslut);
+    // everybody, coding 출력
+
+ </script>   
+</body>
+</html>
