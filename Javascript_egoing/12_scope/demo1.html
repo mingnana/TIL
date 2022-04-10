@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 유효범위 
+        var vscope = 'global';
+        // vscope이라는 변수에 global이라는 값을 할당함
+        function fscope(){
+            vscope = 'local';
+            alert(vscope);
+            // local 출력
+            // fscope이라는 함수안에 vscope이라는 변수가 선언돼있음
+            // alert(vscope)는 자신에게 가장 가까운 쪽에 정의돼있는 값을 가져옴
+            // 만약 vscope = 'local'이 없다면 global를 가져옴
+        }
+        function fscope2(){
+            alert(vscope);
+            // 두개 다 global값 출력 == 전역변수
+            
+        fscope();
+        
+            // 지역변수 : local == 함수의 중괄호{} 안에서만 접근가능
+            // 전역변수 : global == 코드 전체로 다 접근가능
+            
+            
+        [1]
+        var vscope = 'global';
+        function fscope(){
+            var vscope = 'local';
+        }
+        fscope();
+        alert(vscope);
+        // global 출력
+
+        [2]
+        var vscope = 'global';
+        function fscope(){
+            vscope = 'local';
+        }
+        fscope();
+        alert(vscope);
+        // local 출력
+
+        [3]
+        var vscope = 'global';
+        function fscope(){
+            var vscope = 'local';
+            vscope = 'local';
+        }
+        fscope();
+        alert(vscope);
+        // global 출력
+
+        // 
+    </script>
+</body>
+</html>
