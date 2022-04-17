@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function factory_movie(title){  // title == 외부함수의 지역변수 
+            return{                         // return값을 get_title이 존재하는데, 그 안에 함수가 존재하니 get_title은 메소드이며, return은 2개의 메소드를 가지고 있는 객체임
+                get_title : function(){ 
+                    return title;           // 외부함수의 title에서 가져옴
+                },
+                set_title : function(_title){
+                    title = _title          // 외부함수의 title을 변경함
+                }
+            }
+        }
+        ghost = factory_movie('Ghost in the shell');
+        matrix = factoy_movie('Matrix');
+
+        alert(ghost.get_title());   // ghost 출력
+        alert(matrix.get_title());  // matrix 출력
+        
+        ghost.set_ttle('공각기동대')
+
+        alert(ghost.get_title());   // 공각기동대 출력
+        alert(matrix.get_title());  // matrix 출력
+    </script>
+</body>
+</html>
