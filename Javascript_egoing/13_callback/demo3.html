@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var numbers = [20, 10, 9,8, 7,6, 5, 4, 3, 2, 1];
+        var sortfunc = function(a, b){
+            return a - b;
+        }
+        // numbers.sort();
+        
+        // .(쩜)앞에 있는 numbers는 객체이자 배열
+        // var에 선언돼있는 값을 number라는 변수에 담음
+        // sort는 메소드라고 함
+
+        alert(numbers.sort(sortfunc));
+        // 1, 10, 2, 20, 3, 4, 5, 6, 7, 8, 9 출력
+        // 기존의 배열순서와는 다르게 정렬됨
+
+        
+    </script>
+
+</body>
+</html>

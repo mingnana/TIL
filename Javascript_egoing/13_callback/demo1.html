@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        javascript에서는 함수도객체다. 다시 말해서 일종의 값이다. 거의 모든 언어가 함수를 가지고 있다.
+        javascript의 함수가 다른 언어의 함수와 다른점은 함수가 값이 될 수 있다는 점이다.
+     -->
+    <script>
+        function a(){}
+        // function함수는 a라는 변수에 담겨진 값이다.
+        // var a = function(){}와 같은 의미인데 즉 , function(){}가 값이 됨
+
+        a = {
+            b:function(){
+                // b의 키값은 function 함수(value), == 함수는 객체안에 저장될 수 있음
+                // 즉, b는 어ㄸㄴ 변수의 역할을 하고있음 == 속성, property
+                // 속성이 담고있는 값이 함수라면 method라고 정의함
+            }
+        }
+        // a라는 변수안에는 b라는 속성이 담겨있고, 그값은 함수값인 method가 들어있음
+
+        function cal(func, num){
+            return func(num)
+            // cal의 첫번째 인자로 전달된 func에 담겨있는 함수를 호출하고, 두번째 인자로 전달된 값을 다시 호출함
+        }
+        function increase(num){
+            return num+1
+        }
+        function decrease(num){
+            return num-1
+        }
+        alert(cal(increase, 1));
+        /*
+            function cals(func,num){
+            var func = increase(num){
+                return num+1
+            } 
+            func(1)
+        }*/
+        alert(cal(decrease, 1));
+
+        function cal(mode){ 
+            var func = {
+                'plus' : function(left, right){return left + right},
+                'minus' : function(left, right){return left - right}
+            }
+            return funcs[mode];
+        }
+        alert(cal('plus')(2,1));
+        // cal의 메소드로 plus값을 주었고,
+        // var func(객체) = { ~~ }(== {}를 담고 있는 변수) 
+        alert(cal('minus')(2,1));
+
+    </script>
+</body>
+</html>
