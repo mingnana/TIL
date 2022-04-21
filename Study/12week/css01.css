@@ -1,0 +1,11 @@
+*, body, ul, li, a, div{margin:0; padding:0;}
+li{list-style-type: none;}
+a:link,a:visited{color:#000; text-decoration: none;}
+#content{width:400px; margin:50px auto 0;}
+
+.title{width:100%; overflow:hidden;}
+.title li{padding:8px 45px; text-align:center; font-size:12px; background-color:#ccc;
+    border-radius:5px; float:left; background-image:linear-gradient(to bottom, #eee 0%, #888 100%);}
+.title li:first-child{background-image:linear-gradient(to top, #eee 0%, #888 100%); font-weight:700;}
+.desc li{width:100%; font-size:14px; display:none;}
+        
