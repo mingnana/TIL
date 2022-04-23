@@ -1,10 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="EUC-KR">
-<title>Insert title here</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <title>Document</title>
+    <style>
+        *, body, ul, li, h2{margin:0; padding:0;}
+        li{list-style:none;}
+        #content{width:700px; margin:50px auto 0;}
+        h2{background-color:blueviolet; color:#fff; text-align:Center; font-size:20px;}
+
+        ul{width:630px; margin:0 auto;}
+        li{width:200px; height:200px; text-align:center; line-height:200px;
+            background-color:#ccc; margin-right:10px; margin-top:10px; float:left;}
+        .box2{border-radius:50%; background-color:#fa0; transition: all 0.3s}
+        
+    </style>
+    <script>
+        $(document).ready(function(){
+            $(this).parent().children().css({"backgroundColor":"#ccc"});
+            $("li").mouseover(function(){
+                $(".box2").css({"transform":"rotateY(360deg)"});
+            })
+            $("li").click(function(){
+                $(this).addClass("box2");
+            })
+        });
+    </script>
 </head>
 <body>
-
+    <div id="content">
+        <h2>대상.addClass(클래스명 작성하기)</h2>
+        <ul>
+            <li>01</li>
+            <li>02</li>
+            <li>03</li>
+            <li>04</li>
+            <li>05</li>
+            <li>06</li>
+        </ul>
+    </div>
 </body>
 </html>
