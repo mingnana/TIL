@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 가장 기본적인 방법
+        function func(){        // func라는 함수는 객체이기때문에 메소드를 가지고 있음
+
+        }
+        func()
+
+        // 객체는 속성을 지니고 있음. 속성에 값이 저장돼있으면 속성이라 하며, 속성에 함수가 들어있다면 메소드라 칭함.
+
+        // apply, call 사용해서 호출하는 방법
+        function sum(arg1, arg2){
+            return arg1+arg2;
+        }
+        sum(1,2)    // 3호출
+        sum(4,2)    // 6호출
+        sum.apply(null, [1,2]); // 3호출
+        sum.apply(null, [4,2]); // 6호출
+    </script>
+</body>
+</html>
