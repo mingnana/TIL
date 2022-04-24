@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>시간표식</title>
+    <style>
+        body{
+            font-size: 2em;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var now = new Date();    // date는 객체, 함수
+        var disp = now.toLocaleTimeString();   // 우리지역을 기준으로 한 시간
+        document.write("현재 시각 : " + disp);
+
+        // typeof now
+        // object 출력
+
+        // var disp
+        // typeof disp
+        // string 출력
+    </script>
+</body>
+</html>
