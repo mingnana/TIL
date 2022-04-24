@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var funcThis = null;
+
+        function Func(){
+            funcThis = this;    // var이 없기 때문에 전역변수인 null 값을 가리킴, this => 생설될 객체
+        }
+        var o1 = Func();        // 일반함수로 호출
+        if(funcThis === window){
+            document.write('window </br>');
+        }
+
+        var o2 = new Func();    // 생성자로 호출, js는 비어있는 객체를 만듬
+        // if (o2 == this) : 생성자호출이 끝난 다음에 값이 할당이 되는것인데 생성자가 없기 때문에 참고 불가능 
+        if(funcThis === o2){    // null과 o2가 같은가?
+            document.write('o2 </br>');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // this란 함수 호출 맥략을 의미한다.
+        
+        function func(){
+            if(window === this){
+                document.write("window === this");
+            }
+        }
+
+        func(); // 전역객체 window와 this가 같다면 window === this 출력되기 때문에 window === this가 출력됨!
+    </script>
+</body>
+</html>
