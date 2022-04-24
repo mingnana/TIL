@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var o = { }
+        var p = { }
+        function func(){
+            switch(this){   //  switch는 괄호내 값과 같은 case들이 실행이 됨, break 까지!
+                // if - switch, for-while
+                case o :
+                    document.write('o<br/>');
+                    break;
+                case p:
+                    document.write('p<br/>');
+                    break;
+                case window:
+                    document.write('window<br/>');
+                    break;
+            }
+        }
+
+
+        // function sum(x, y){return x+y}  == 기본 함수 정의방법
+        // sum(1,2) == 3출력
+
+        // var sum2 = sum Function('x', 'y', 'return x+y')
+        // sum2(1,2) == 3출력
+
+        // var o = { } : 객체 리터럴(literal)
+        // var a = [1, 2, 3] : 배열 리터럴
+
+
+        func();     
+        func.apply(o);
+        func.apply(p);
+
+    </script>
+</body>
+</html>

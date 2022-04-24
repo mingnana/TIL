@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Person(){}     // 일반적인 함수정의
+
+        var p = new Person();   // console.log = p0 했을때 undefined이지만, var p = ner Person을 담고 호출하면 "Person { }" 출력됨
+        // 즉, new는 객체의 생성자
+        // person은 new로 인해 비어있는 생성자를 만들고, 객체를 반환함 
+        // 함수에 new를 붙이면 객체로 변환됨
+        p.name = 'egoing';
+        p.introduce = function(){
+            return 'my name is '+this.name;
+        }
+        document.write(p.introduce());
+
+
+        
+        function Person(name){
+            this.name = name;
+            this.introduce = function(){
+                return 'My name is '+this.name;
+            }
+        }
+        var p1 = new Person('egoing');          // this.name은 egoing 출력
+        document.write(p1.introduce()+"<br/>");
+
+        var p2 = new Person('leezche');          // this.name은 leezche 출력
+        document.write(p2.introduce());
+
+    </script>
+</body>
+</html>
