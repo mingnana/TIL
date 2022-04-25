@@ -1,0 +1,14 @@
+*, body, div, img{margin:0; padding:0;}
+html{height:100%;}
+body{background-image:linear-gradient(to bottom, rgb(0,0,0) 0%,rgb(0,0,0) 80%, rgb(255,0,0) 100%);
+    background-image:-moz-gradient(to bottom, rgb(0,0,0) 0%,rgb(0,0,0) 80%, rgb(255,0,0) 100%);
+    background-image:-o-gradient(to bottom, rgb(0,0,0) 0%,rgb(0,0,0) 80%, rgb(255,0,0) 100%);
+    background-image:-ms-gradient(to bottom, rgb(0,0,0) 0%,rgb(0,0,0) 80%, rgb(255,0,0) 100%);}
+#content{width:700px; margin:50px auto 0; position:relative;}
+#logo{width:500px; margin:0 auto;}
+img{width:100%;}
+
+#box{width:690px; height:362px; border:5px solid #fff; margin-top:50px; }
+
+#click{width:690px; height:362px; position:absolute; left:5px; top:180px;}
+#click p{width:345px; height:362px; float:left;}
