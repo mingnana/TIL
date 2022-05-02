@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>지구본,텍스트 흔들기</title>
+    <link rel="stylesheet" href="css/text.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        function hello() {
+            var rnd1 = Math.floor(Math.random() * 20);
+            var rnd2 = Math.floor(Math.random() * 40);
+            var rnd3 = Math.floor(Math.random() * 3) + 100;
+
+            $(".text").css({
+                "bottom" : rnd1, "left" : rnd2
+            });
+            $(".hello .text").css({"background-size" : rnd3 + "%"});
+        }
+        setInterval(hello, 10);
+    </script>
+</head>
+<body>
+    <div class="hello">
+        <div class="text">안녕하세요!!</div>
+    </div>
+    
+</body>
+</html>
