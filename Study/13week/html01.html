@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <title>Document</title>
+    <script>
+        $(document).ready(function(){
+                // var test = $("option:eq("+i+")")
+                var test = $("#uemail")
+                if($("option:eq(1)").attr("seledted","selected")){
+                    test.attr("value","google.com")
+                }else if($("option:eq(2)").attr("seledted","seledted")){
+                    test.attr("value","naver.com")
+                }else if($("option:eq(3)").attr("seledted","seledted")){
+                    test.attr("value","daum.net")
+                }else{
+                    test.focus()
+            }      
+        })
+
+    </script>
+</head>
+<body>
+    <div>
+        <input type="text" id="uid" name="name" placeholder="아이디 입력">@
+        <input type="text" id="uemail" name="name" value="">
+        <select name="name">
+            <option value="typeSelect" selected>이메일선택</option>
+            <option value="google.com">google.com</option>
+            <option value="naver.com">naver.com</option>
+            <option value="daum.net">daum.net</option>
+            <option value="직접입력">직접입력</option>
+        </select>
+    </div>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <style>
+        *, body{margin:0; padding:0;}
+        li{list-style: none;}
+        #dunkin{width:890px; margin:50px auto;}
+        h2{color:#fa0; text-align: center;}
+        #menu{width:100%; border:1px solid orange; margin:30px 0 20px; }
+        #menu:after{content:""; display:block; clear:both;}
+        #menu ul{width:100%;}
+        #menu li{float:left;}
+
+        #oA{width:100%;}
+        #oBtn{padding: 0 30px; margin-bottom:10px;}
+    </style>
+    <script>
+        function ordering(){
+            do{
+                var oInput = prompt("메뉴에 적혀있는 번호를 입력하세요.", "1~5까지 숫자 입력");
+            }while(!(oInput<6)){
+                alert(oInput+"번 제품을 선택하였습니다.")
+            }
+
+            do{
+                var drink = prompt("음료를 추가주문하시겠습니까?","Y,y 또는 N,n 입력")
+            }while(!(drink=="Y"||drink=="y"||drink=="N"||drink=="n")){
+                switch(drink){
+                case "Y" : case "y" : alert("++++++ 음료메뉴 +++++\n아메리카노\n카페라떼\n카푸치노\n아이스티\n밀크티 "); 
+                    do{
+                        var dmenu = prompt("음료를 주문해주세요")
+                    }while(!(dmenu == "아메리카노" || dmenu == "카페라떼" || dmenu == "카푸치노" || dmenu == "아이스티" || dmenu == "밀크티")){
+                        $("#oInput").attr("value","추가주문 : "+dmenu)
+                    };
+                case "N" : case "n" : $(".img img").attr("src", "img/best"+oInput+".jpg"); break;
+                }
+            } 
+        }
+
+    </script>
+</head>
+<body>
+    <div id="dunkin">
+        <h2>던킨 TOP_메뉴판</h2>
+        <div id="menu">
+            <ul>
+                <li><img src="img/best1.jpg" alt="best1"></li>
+                <li><img src="img/best2.jpg" alt="best2"></li>
+                <li><img src="img/best3.jpg" alt="best3"></li>
+                <li><img src="img/best4.png" alt="best4"></li>
+                <li><img src="img/best5.png" alt="best5"></li>
+            </ul>
+        </div>
+        <div id="oA">
+            <input type="button" id="order" value="주문버튼" onclick="ordering()"/>
+            <p class="img">
+                <img src="img/order.png" alt="주문"/>
+            </p>
+            <input type="text" id="oInput">
+        </div>
+    </div>
+
+</body>
+</html>

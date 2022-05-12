@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <title>Document</title>
+    <style>
+        *, body, div, p,img{margin:0; padding:0;}
+        html{background-color:#000;}
+        div{width:500px; margin:0 auto;}
+        .img{width:100%; height:288px; overflow:hidden; border:1px solid #fff; position:relative;
+            margin-bottom:20px;}
+        img{width:100%; }
+        /* img{width:100%;} */
+        .text{width:500px; height:288px; overflow:hidden; line-height:308px; background-color:rgba(0,0,255,0.5);
+        color:#fff; text-align:center;  position:absolute; top:50%; left:50%; transform: translatex(-50%);
+        transition:all 0.5s linear}
+
+        /* .Bcolor{width:100%; background-color:rgba(0,0,255,1); position:absolute; top:0; left:0;}
+        .Bcolor{width:100%; background-color:rgba(0,0,255,1); } */
+    </style>
+    <script>
+        $(document).ready(function(){
+            $(".text").hide();
+            mouseout();
+            mouseover();
+        })
+        function mouseover(){
+            $(".img").mouseover(function(){
+                $(".text").show().stop().css({
+                    "top":$(this).offset().top,
+            });
+        })
+    }
+        function mouseout(){
+            $(".img").mouseout(function(){
+                $(".text").hide().stop()
+        });
+    };
+
+    </script>
+</head>
+<body>
+    <div>
+        <p class="img"><img src="img/01.jpg" alt="test1"></p>
+        <p class="img"><img src="img/02.jpg" alt="test2"></p>
+        <p class="img"><img src="img/03.jpg" alt="test3"></p>
+        <p class="img"><img src="img/04.jpg" alt="test4"></p>
+    </div>
+    <p class="text">IMAGE</p>
+</body>
+</html>

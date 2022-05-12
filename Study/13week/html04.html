@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *, div, p, form, fieldset, legend, button{margin:0; padding:0;}
+        form{width:350px; margin:50px auto;}
+        legend,fieldset{border:none;}
+        legend{font-size:20px; font-weight:700; padding-bottom:20px;}
+
+        p{padding:5px 0; background-color:rgb(247, 245, 245); margin-bottom:5px;}
+        label{width:100px; padding-left:10px; display:inline-block;}
+        button, input{width:200px; border:1px solid #ccc; padding:3px 0;}
+        
+    </style>
+    <script>
+        function calBtn(){
+            var num0 = document.getElementById("num0");
+            var inp0 = document.getElementById("inp0");
+            var num1 = document.getElementById("num1");
+            var total = document.getElementById("total");
+            
+            var test = inp0.value
+            switch(test){
+                case "+" : total.value = parseInt(num0.value) + parseInt(num1.value); break;
+                case "-" : total.value = parseInt(num0.value) - parseInt(num1.value); break;
+                case "*" : total.value = parseInt(num0.value) * parseInt(num1.value); break;
+                default : alert("숫자를 입력해주세요."); break;
+            }
+        }
+    </script>
+</head>
+<body>
+    <form action="#" method="get">
+        <fieldset>
+            <legend>JAVASCRIPT_SWITCH</legend>
+            <p>
+                <button id="cal" onclick="calBtn();">계산하기</button>
+            </p>
+            <p>
+                <label for="num0">숫자입력1 : </label>
+                <input type="number" id="num0" name="num0"/>
+            </p>
+            <p>
+                <label for="inp0">연산자입력 : </label>
+                <input type="text" id="inp0" name="inp0"/>
+            </p>
+            <p>
+                <label for="num1">숫자입력2 : </label>
+                <input type="number" id="num1" name="num1"/>
+            </p>
+            <p>
+                <label for="total">결과값 : </label>
+                <input type="text" id="total" name="total" readonly/>
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>

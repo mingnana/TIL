@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *, body, div, form, fieldset, h2, p, img, legend{margin:0; padding:0;}
+        legend{display:none;}
+        
+        #formArea{width:500px; margin:50px auto;}
+        form{width:100%; border:1px dashed #f00; padding-bottom:20px;}
+        fieldset{width:100%; border:none;}
+        h2{background-color:#f00; color:#fff; text-align:center; letter-spacing: 20px; padding:5px 0;}
+        .img{width:440px; padding:0 30px; margin-bottom:20px;}
+        img{width:100%;}
+        
+        /* 상품정보 */
+        .pizzaInn{margin-left:30px; line-height:35px;}
+        label{display:inline-block; width:100px;}
+        .pizzaInn input[type="text"]{border:none;}
+        .pizzaInn #price, .tPrice{text-indent: 30px; font-size: 20px; width:110px;}
+        .pizzaInn select, input[type="number"]{padding:5px 10px;}
+        .pizzaInn input[type="number"]{width:80px;}
+        .pizzaInn .btn{padding:5px; margin-right:100px;}
+
+    </style>
+    <script>
+        function total(){
+            var num = document.getElementById("num");
+            var pD = document.getElementById("product");
+
+
+            document.getElementById("tP").innerText = num.value * 28000 +"원"
+            if(pD.value == "------ 피자선택 ------" || pD.value == "==============="){
+                alert("피자를 선택하세요.");
+                return false;
+            } else if(num.value == ""){
+                alert("수량을 선택하세요.");
+            }
+        }
+        
+    </script>
+</head>
+<body>
+    <div id="formArea">
+        <form action="#" title="pizza">
+            <fieldset>
+                <legend>pizza</legend>
+                <h2>PIZZA</h2>
+                <p class="img">
+                    <img src="img/pizza.gif" alt="피자">
+                </p>
+                <div class="pizzaInn">
+                    <p>
+                        <label>판매가</label>
+                        <input type="text" id="price" value="28000원" title="price" readonly/>
+                    </p>
+                    <p>
+                        <label>상품</label>
+                        <select name="product" id="product">
+                            <option value="typeSelect" selected>------ 피자선택 ------</option>
+                            <option value="divide">===============</option>
+                            <option value="콤비네이션 피자">콤비네이션 피자</option>
+                            <option value="페퍼로니 피자">페퍼로니 피자</option>
+                            <option value="하와이안 피자">하와이안 피자</option>
+                            <option value="불고기 피자">불고기 피자</option>
+                            <option value="포테이토 피자">포테이토 피자</option>
+                            <option value="고구마 피자">고구마 피자</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label>수량</label>
+                        <input type="number" id="num" title="상품" min="0"/>
+                    </p>
+                    <p>
+                        <input type="button" class="btn" value="합계" title="btn" onclick="total();">
+                        <input type="text" class="total" title="btn">원
+                    </p>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
