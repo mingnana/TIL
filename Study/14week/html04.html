@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #calc{width:130px; margin:50px auto;}
+        input[type="text"]{width:120px; margin-bottom:3px;}
+        input[type="button"]{width:28px; height:25px; margin-bottom:3px; text-align: center;}
+        input[value="clear"]{width:80px;}
+    </style>
+    <script>
+        function texts(texts){
+            result.value += texts;
+        }
+
+
+        function reset(texts){
+            result.value = ""
+        }
+        
+        function resultBtn(){
+            var allData = ""
+            allData  = allData + result.value;
+            result.value = eval(allData)
+        }
+
+    </script>
+</head>
+<body>
+    <div id="calc">
+        <input type="text" id="result" title="result">
+        <input type="button" id="number" value="1" onclick="texts(this.value)">
+        <input type="button" id="number" value="2" onclick="texts(this.value)">
+        <input type="button" id="number" value="3" onclick="texts(this.value)">
+        <input type="button" id="plus" value="+" onclick="texts(this.value)">
+        <input type="button" id="number" value="4" onclick="texts(this.value)">
+        <input type="button" id="number" value="5" onclick="texts(this.value)">
+        <input type="button" id="number" value="6" onclick="texts(this.value)">
+        <input type="button" id="minus" value="-" onclick="texts(this.value)">
+        <input type="button" id="number" value="7" onclick="texts(this.value)">
+        <input type="button" id="number" value="8" onclick="texts(this.value)">
+        <input type="button" id="number" value="9" onclick="texts(this.value)">
+        <input type="button" id="multiply" value="*" onclick="texts(this.value)">
+        <input type="button" id="number" value="0" onclick="texts(this.value)">
+        <input type="button" id="comma" value="." onclick="texts(this.value)">
+        <input type="button" id="equal" value="=" onclick="resultBtn()">
+        <input type="button" id="slash" value="/" onclick="texts(this.value)">
+        <input type="button" id="clear" value="clear" onclick="reset(this.value)">
+    </div>
+</body>
+</html>
