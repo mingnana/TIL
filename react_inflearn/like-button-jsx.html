@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id="root"></div>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script type="text/babel">
+        'use strict';
+
+        function LikeButton(){  // 함수 컴포넌트
+            // this 쓸일이 없다.
+            const [liked, setLiked] = React.useState(false) // 구조분해, 배열 vs 객체
+            // 뭔짓을 하든, 결국 return한게 화면
+            if(liked){
+                return 'You liked this.'
+            }
+            return(
+                <button onClick={()=>{setLiked(true);}}>Like</button>
+            )
+        }
+    </script>
+    <script type="text/babel">
+        // ReactDOM.render(React.createElement(LikeButton), document.querySelector('#root'))   // react 17버전 코드
+        ReactDOM.createRoot(document.querySelector("#root")).render(
+                <LikeButton/>
+        ) //React 18버전 코드
+    </script>
+</body>
+</html>

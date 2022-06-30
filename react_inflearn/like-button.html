@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id="root"></div>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script>
+        'use strict';
+
+        class LikeButton extends React.Component{
+            constructor(props){
+                super(props);
+                this.state = {liked:false};
+            }
+            render(){
+                if(this.state.liked){
+                    return 'You liked this.';
+                }
+                return React.createElement('button', {onClick:()=> this.setState({liked:true})}, 'Like');
+            }
+        }   // 1%는 ErrorBoundary에서 사용
+    </script>
+    <script>
+        ReactDOM.render(React.createElement(LikeButton), document.querySelector('#root'))
+    </script>
+</body>
+</html>
