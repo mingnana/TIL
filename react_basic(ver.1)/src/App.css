@@ -1,29 +1,26 @@
 .App {
   text-align: center;
 }
-body{
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+div{
+  box-sizing:border-box;
+}
+.list{
+  padding-left:20px;
+  text-align:left;
+  border-bottom:1px solid gray;
 }
 .modal{
   margin-top:20px;
   padding:20px;
   background:#eee;
-}
-.black-nav{ 
-  background : black;
-  width:100%;
-  display:flex;
-  color:white;
-  padding:20px;
-  font-weight:600;
-  font-size:20px;
-  box-sizing:border-box;
-}
-.list{
-  margin-top:30px;
   text-align:left;
+}
+.black-nav{
+  display:flex;
+  background:black;
+  width:100%;
+  color:white;
   padding-left:20px;
-  padding-right:20px;
 }
 .App-logo {
   height: 40vmin;
