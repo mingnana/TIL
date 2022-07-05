@@ -19,7 +19,7 @@
         const reset = ()=>{setAmount(0)}
         const onFlip = () => {
             setFlipped((current) => !current)
-            // í˜„ìž¬ê°’ì„ ë°˜ëŒ€ì˜ ê°’ìœ¼ë¡œ ë‚´ë³´ëƒ„
+            // ÇöÀç°ªÀ» ¹Ý´ëÀÇ °ªÀ¸·Î ³»º¸³¿
             reset();
         }
         return(
@@ -35,7 +35,7 @@
                         onChange={onChange}
                         disabled={flipped}
                         // disabled={flipped === true}
-                        // ë§Œì•½ flippedê°€ falseë¼ë©´ disaledë ê²ƒì´ë‹¤.
+                        // ¸¸¾à flipped°¡ false¶ó¸é disaledµÉ°ÍÀÌ´Ù.
                     />
                 </div>
                 <h4>You want to convert {amount}</h4>
@@ -47,7 +47,7 @@
                         type="number"
                         disabled={!flipped}
                         // disabled={flipped === false}
-                        // ë§Œì•½ flippedê°€ falseë¼ë©´ disaledë ê²ƒì´ë‹¤.
+                        // ¸¸¾à flipped°¡ false¶ó¸é disaledµÉ°ÍÀÌ´Ù.
                         onChange={onChange}
                     />
                 </div>
