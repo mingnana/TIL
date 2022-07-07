@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+
+<body>
+    <h1>api 연습</h1>
+    <p></p>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script>
+        $.ajax({
+            method: "GET",
+            url: "https://dapi.kakao.com/v3/search/book?target=title",
+            data: { query : "미움받을 용기" },
+            headers : {Authorization: "KakaoAK 2e90e23ebe6d457f6f435c7b05d3f023"}
+        })
+            .done(function (msg) {
+                // alert("Data Saved: " + msg);
+                console.log(msg.documents[0].title);
+                console.log(msg.documents[0].thumbnail);
+                $("p").append("<strong>"+msg.documents[0].title+"</strong>");
+                $("p").append("<img src='"+msg.documents[0].thumbnail+"'/>");
+            });
+
+            function id_check(){
+    var userId = getElementById("uid");
+    $.ajax({
+        type : "POST",            // HTTP method type(GET, POST) 형식이다.
+        url : "/user/idCheck",      // 컨트롤러에서 대기중인 URL 주소이다.
+        data : userId,            // Json 형식의 데이터이다.
+        success : function(res){ // 비동기통신의 성공일경우 success콜백으로 들어옵니다. 'res'는 응답받은 데이터이다.
+            // 응답코드 > 0000
+            if(text == "success"){
+                alert("아이디 사용이 가능합니다.");
+            } else if(text == "nochange"){
+            alert("중복된 아이디입니다.");
+            }
+        },
+        error : function(XMLHttpRequest, textStatus, errorThrown){ // 비동기 통신이 실패할경우 error 콜백으로 들어옵니다.
+            alert("통신 실패.")
+        }
+    });
+};
+
+    </script>
+</body>
+
+</html>
