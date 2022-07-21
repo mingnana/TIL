@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #print{
+            width:500px;
+            height:300px;
+            text-align: center;
+            line-height:150px;
+            vertical-align: middle;
+            border:2px solid #00f;
+        }
+    </style>
+    <script src="libs/jquery-3.5.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            // 문자열 입력받기
+            var str = window.prompt("문자열을 입력해주세요.")
+            var $print = $("#print");
+            var i = 0;
+            var timerID = setInterval(function(){
+                var ch = str.charAt(i); // 해당인덱스의 문자가 ch 변수에 저장된다.
+                // charAt == 문자열에서 특정 인덱스에 위치하는 string 문자열을 반환함
+                // 문자를 출력
+                $print.text(ch);
+                // 다음 문자를 출력하기 위해서 인덱스를 증가해야함.
+                i++
+                // 모든 문자를 다 출력했다면 타이머 정지함
+                if(i>=str.length){
+                    clearInterval(timerID);
+                    alert("문자열 출력 종료");
+                }
+            }, 1000)
+        })
+    </script>
+</head>
+<body>
+    <div id="print"></div>
+</body>
+</html>
