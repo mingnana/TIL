@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>todo</title>
+  </head>
+  <body>
+    <div id="todolist">
+      <div class="main-title">
+        <h1>To do list</h1>
+      </div>
+      <div class="input-section">
+        <form action="">
+          <div>
+            <input type="text" class="item" autofocus="true" />
+          </div>
+          <div>
+            <button type="button" class="input-button">
+              <i class="fas fa-plus-circle"></i>
+            </button>
+          </div>
+        </form>
+      </div>
+      <div class="item-list"></div>
+    </div>
+    <!-- defer는 브라우저에게 document가 parse된 이후에 script가 실행되어야 한다고 알려주는 역할을 한다. 
+        async를 사용할 경우 정의된 스크립트의 순서와 상관없이 먼저 다운로드 된 스크립트가 실행되기 때문에
+        js파일들이 서로 의존적이고 정의된 순서에 따라 실행되어야 정상적으로 작동하는 경우 문제가 생김.
+        그러나 defer를 사용하면 html을 parsing하는 동안 필요한 js를 모두 다운로드 받은 후, 프로그래머가 정의한 순서대로
+        스크립트가 실행되기 때문에 위와 같은 문제 예방가능
+    -->
+    <script defer>
+      let itemList = [];
+      let inputButton = document.querySelector(".input-button");
+      inputButton.addEventListener("click", addItem);
+
+      function addItem() {
+        let item = document.querySelector(".item").value;
+        if (item != null) {
+          //   itemList.push(item);
+          itemList.appendChild(item);
+          document.querySelector(".item").value = "";
+          document.querySelector(".item").focus();
+        }
+        showList();
+      }
+    </script>
+  </body>
+</html>
