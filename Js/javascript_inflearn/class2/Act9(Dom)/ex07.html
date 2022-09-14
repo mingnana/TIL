@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #container {
+        width: 500px;
+        margin: 20px auto;
+      }
+      h1 {
+        font-size: 2.5em;
+        text-align: center;
+      }
+      form {
+        margin-top: 55px;
+      }
+      input[type="text"] {
+        float: left;
+        width: 300px;
+        padding: 12px;
+        border: none;
+        border-bottom: 1px solid gray;
+        font-size: 20px;
+      }
+      input:focus {
+        outline: none;
+      }
+      button {
+        width: 100px;
+        border: 1px solid gray;
+        padding: 10px;
+        margin-left: 30px;
+        font-size: 20px;
+        background: pink;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: gold;
+      }
+      hr {
+        clear: both;
+        visibility: hidden;
+      }
+      #nameList p {
+        font-size: 20px;
+        text-indent: 50px;
+        line-height: 1.5;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <h1>참가신청</h1>
+      <form action="#">
+        <input
+          type="text"
+          id="userName"
+          placeholder="이름을 입력하세요"
+          required
+        />
+        <button onclick="newRegister(); return false;">신청</button>
+      </form>
+      <hr />
+      <div id="nameList"></div>
+    </div>
+    <script>
+      function newRegister() {
+        var newP = document.createElement("p");
+        var userName = document.querySelector("#userName");
+        var text = document.createTextNode(userName.value);
+        newP.appendChild(text); // p노드가 상위요소가 되고 text라는 하위 요소를 연결하기
+
+        var nameList = document.querySelector("#nameList");
+        nameList.appendChild(newP);
+        userName.value = ""; // 텍스트 필드 지우기
+      }
+    </script>
+  </body>
+</html>
