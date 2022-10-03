@@ -17,7 +17,7 @@ function App() {
                   key={route.path}
                   path={route.path}
                   component={route.component}
-                ></Route>
+                />
               );
             })}
           </Switch>
