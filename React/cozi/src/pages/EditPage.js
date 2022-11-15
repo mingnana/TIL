@@ -1,11 +1,12 @@
-import React from 'react'
+import React from "react";
+import BlogForm from "../component/BlogForm";
 
 const EditPage = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
+    return (
+        <div>
+            <BlogForm editing={true} />
+        </div>
+    );
+};
 
-export default EditPage
+export default EditPage;
