@@ -17,7 +17,16 @@ const Navbar = () => {
                 <ul class="nav nav-pills">
                     <li class="nav-item">
                         <NavLink
-                            activeClassName="active"
+                            className="nav-link"
+                            to="/admin"
+                            aria-current="page"
+                            exact
+                        >
+                            Admin
+                        </NavLink>
+                    </li>
+                    <li class="nav-item">
+                        <NavLink
                             className="nav-link"
                             to="/blogs"
                             aria-current="page"
